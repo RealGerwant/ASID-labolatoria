@@ -1,0 +1,144 @@
+\documentclass[polish,polish,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pslatex}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{anysize}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[polish]{babel}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\marginsize{2.5cm}{2.5cm}{2cm}{2cm}
+
+
+\begin{document}
+	
+\begin{spacing}{1.5}
+		\begin{titlepage}
+		\vspace*{\fill}
+		\begin{center}
+			{\Large Algorytmy i struktury danych \\[0.1cm]
+				Sprawozdanie z zadania w zespołach nr. 1\\[0.1cm]
+				prowadząca: dr hab. inż. Małgorzata Sterna, prof PP}\\[0.7cm]
+			{\huge Algorytmy sortujące\\ [0.7cm]}
+			{\large autorzy:\\[0.1cm]}
+			{\Large Piotr Więtczak nr indeksu 132339,\\[0.1cm] Tomasz Chudziak nr indeksu 136691}\\[0.5cm]
+			\today
+		\end{center}
+		\vspace*{\fill}
+	\end{titlepage}
+	
+	\section{Implementacja algorytmów sortujących}
+	Do implementacji metod sortowania posłużyliśmy się językiem $ C++ $, każda metoda została napisana  w odrębnej  funkcji, która za parametry przyjmuje kolejno: wskaźnik na tablicę, rozmiar sortowanej tablicy oraz jako ostatni wartość opcjonalną “reverse” typu bool, która odpowiada za to czy tablica będzie posortowana malejąco. Do mierzenia czasu poszczególnych metod użyliśmy klasy $ std::chrono::high::resolution\_clock  $ z biblioteki $ chrono $.
+	\section{Badana zależność czasu obliczeń $ t[s]$ od liczby sortowanych elementów~$ n $. }
+	W celu lepszego przedstawienia otrzymanych danych podzieliliśmy metody na dwie grupy, "wolne" (Insertion Sort, Selection Sort, Bubble Sort) i "szybkie" (Counting Sort, Quick Sort, Merge Sort, Heap Sort).
+	
+	\subsection{Metody $ "$wolne$" $}
+	\subsubsection{Opis algorytmów $"$wolnych$"$}
+	\subsubsection*{Insert Sort}
+	Zalety:
+	\begin{itemize}
+		\item działa w miejscu
+		\item stabilny 
+	\end{itemize}
+	Wady:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+	Inne cechy:
+	\begin{itemize}
+		\item zachowanie naturalne
+	\end{itemize}
+	
+	
+	\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+	\begin{equation*}
+	\begin{array}{|l|c|c|c|}
+	\hline
+	&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+	&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+	&$optymistycznego$&$średniego$&$pesymistycznego$\\
+	\hline
+	$Insert Sort$&O(n^2)&O(n^2)&O(n^2)\\
+	\hline
+	\end{array}
+	\end{equation*}
+		\captionof{table}{Tablica złożoności obliczeniowej dla metody Insert Sort}
+		
+		\subsubsection*{Selection Sort}
+	Zalety:
+	\begin{itemize}
+		\item działa w miejscu
+		\item stabilny 
+	\end{itemize}
+	Wady:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+	Inne cechy:
+	\begin{itemize}
+		\item zachowanie naturalne
+	\end{itemize}
+	
+	
+	\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+	\begin{equation*}
+	\begin{array}{|l|c|c|c|}
+	\hline
+	&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+	&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+	&$optymistycznego$&$średniego$&$pesymistycznego$\\
+	\hline
+	$Insert Sort$&O(n^2)&O(n^2)&O(n^2)\\
+	\hline
+	\end{array}
+	\end{equation*}
+	\captionof{table}{Tablica złożoności obliczeniowej dla metody Selection Sort}
+	
+	
+			\subsubsection*{Bubble Sort}
+	Zalety:
+	\begin{itemize}
+		\item działa w miejscu
+		\item stabilny 
+	\end{itemize}
+	Wady:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+	Inne cechy:
+	\begin{itemize}
+		\item zachowanie naturalne
+	\end{itemize}
+	
+	
+	\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+	\begin{equation*}
+	\begin{array}{|l|c|c|c|}
+	\hline
+	&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+	&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+	&$optymistycznego$&$średniego$&$pesymistycznego$\\
+	\hline
+	$Insert Sort$&O(n^2)&O(n^2)&O(n^2)\\
+	\hline
+	\end{array}
+	\end{equation*}
+	\captionof{table}{Tablica złożoności obliczeniowej dla metody Bubble Sort}
+	
+\end{spacing}
+	
+	\newpage
+	\tableofcontents
+\end{document}
+
+
