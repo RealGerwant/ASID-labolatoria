@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {2}Badana zale\IeC {\.z}no\IeC {\'s}\IeC {\'c} czasu oblicze\IeC {\'n} $ t[s]$ od liczby sortowanych element\IeC {\'o}w~$ n $. }{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Metody $ "$wolne$" $}{1}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Opis algorytm\IeC {\'o}w $"$wolnych$"$}{1}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Metody $"$szybkie$"$}{3}{subsection.2.2}
