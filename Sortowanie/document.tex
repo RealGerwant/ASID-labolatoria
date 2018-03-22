@@ -63,8 +63,8 @@
 	
 	\begin{figure}[H]
 		\begin{equation*}
-		\begin{array}{|l|c|c|c|}
-		\hline
+		\begin{array}{l|c|c|c|}
+
 		&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
 		&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
 		&$optymistycznego$&$średniego$&$pesymistycznego$\\
@@ -95,13 +95,13 @@
 	\begin{figure}[H]
 
 		\begin{equation*}
-		\begin{array}{|l|c|c|c|}
-		\hline
+		\begin{array}{l|c|c|c|}
+
 		&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
 		&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
 		&$optymistycznego$&$średniego$&$pesymistycznego$\\
 		\hline
-		$Insert Sort$&O(n^2)&O(n^2)&O(n^2)\\
+		$Selection Sort$&O(n^2)&O(n^2)&O(n^2)\\
 		\hline
 		\end{array}
 		\end{equation*}
@@ -129,13 +129,13 @@
 	
 	\begin{figure}[H]
 			\begin{equation*}
-		\begin{array}{|l|c|c|c|}
-		\hline
+		\begin{array}{l|c|c|c|}
+
 		&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
 		&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
 		&$optymistycznego$&$średniego$&$pesymistycznego$\\
 		\hline
-		$Insert Sort$&O(n^2)&O(n^2)&O(n^2)\\
+		$Bubble Sort$&O(n^2)&O(n^2)&O(n^2)\\
 		\hline
 		\end{array}
 		\end{equation*}
@@ -146,8 +146,8 @@
 	
 	\begin{figure}[H]
 			\begin{equation*}
-		\begin{array}{|c|c|c|c|}
-		\hline
+		\begin{array}{l|c|c|c|}
+
 		&$Insertion Sort$&$Selection Sort$&$Bubble Sort$\\
 		\hline
 		\end{array}
@@ -158,8 +158,158 @@
 	\subsubsection*{Wykres ilustrujący zależności czasu sortowania od ilości elementów dla metod $"$wolnych$"$, zakres liczb $ [1,n] $.}
 	
 	\subsection{Metody $"$szybkie$"$}
-\end{spacing}
+
+
+		\subsubsection*{Quick Sort}
+	Zalety:
+	\begin{itemize}
+		\item działa w miejscu
+		\item stabilny 
+	\end{itemize}
+	Wady:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+	Inne cechy:
+	\begin{itemize}
+		\item zachowanie nie naturalne
+		\item korzysta z metody $"$dziel i rządź$"$
+	\end{itemize}
 	
+	\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+	\begin{figure}[H]
+		
+		\begin{equation*}
+		\begin{array}{l|c|c|c|}
+
+		&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+		&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+		&$optymistycznego$&$średniego$&$pesymistycznego$\\
+		\hline
+		$Quick Sort$&O(n\log_{2}(n))&O(n\log_{2}(n))&O(n^2)\\
+		\hline
+		\end{array}
+		\end{equation*}
+		\captionof{table}{Tablica złożoności obliczeniowej dla metody Quick Sort}
+	\end{figure}
+	
+			\subsubsection*{Merge Sort}
+	Zalety:
+	\begin{itemize}
+		\item algorytm asymptotycznie optymalny
+	\end{itemize}
+	Wady:
+	\begin{itemize}
+		\item nie działa w miejscu
+		\item wrażliwy na dane wejściowe
+	\end{itemize}
+	Inne cechy:
+	\begin{itemize}
+		\item korzysta z metody $"$dziel i rządź$"$
+	\end{itemize}
+	
+	\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+	\begin{figure}[H]
+		
+		\begin{equation*}
+		\begin{array}{l|c|c|c|}
+
+		&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+		&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+		&$optymistycznego$&$średniego$&$pesymistycznego$\\
+		\hline
+		$Merge Sort$&O(n\log_{2}(n))&O(n\log_{2}(n))&O(n^2)\\
+		\hline
+		\end{array}
+		\end{equation*}
+		\captionof{table}{Tablica złożoności obliczeniowej dla metody Merge Sort}
+	\end{figure}
+	
+			\subsubsection*{Heap Sort}
+Zalety:
+\begin{itemize}
+	\item działa w miejscu
+\end{itemize}
+Wady:
+\begin{itemize}
+	\item wrażliwy na dane wejściowe
+\end{itemize}
+Inne cechy:
+\begin{itemize}
+	\item zachowanie nienaturalne
+	\item korzysta ze stogów
+\end{itemize}
+
+\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+\begin{figure}[H]
+	
+	\begin{equation*}
+	\begin{array}{l|c|c|c|}
+
+	&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+	&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+	&$optymistycznego$&$średniego$&$pesymistycznego$\\
+	\hline
+	$Heap Sort$&O(n)&kek&O(n\log_{2}(n))\\
+	\hline
+	\end{array}
+	\end{equation*}
+	\captionof{table}{Tablica złożoności obliczeniowej dla metody Heap Sort}
+\end{figure}
+
+			\subsubsection*{Counting Sort}
+Zalety:
+\begin{itemize}
+	\item 
+\end{itemize}
+Wady:
+\begin{itemize}
+	\item nie działa w miejscu
+	\item ograniczony ze względu na zakres sortowanych liczb
+	\item mało wydajny dla danych z dużego przedziału
+\end{itemize}
+Inne cechy:
+\begin{itemize}
+	\item 
+\end{itemize}
+
+\subsubsection*{Tabela przedstawiająca złożoność obliczeniową dla przypadków optymistycznego, średniego i pesymistycznego} 
+\begin{figure}[H]
+	
+	\begin{equation*}
+	\begin{array}{l|c|c|c|}
+
+	&$złożoność obliczeniowa$&$złożoność obliczeniowa$&$złożoność obliczeniowa$\\
+	&$dla przypadku$&$dla przypadku$&$dla przypadku$\\
+	&$optymistycznego$&$średniego$&$pesymistycznego$\\
+	\hline
+	$Counting Sort$&O(n)&O(n)&O(n)\\
+	\hline
+	\end{array}
+	\end{equation*}
+	\captionof{table}{Tablica złożoności obliczeniowej dla metody Counting Sort}
+\end{figure}
+
+	\subsubsection*{Tabela ilustrująca zależności czasu sortowania od ilości elementów dla metod $"$szybkich$"$, zakres liczb $ [1,n] $.}
+
+\begin{figure}[H]
+	\begin{equation*}
+	\begin{array}{l|c|c|c|c|}
+	
+	&$Quick Sort$&$Merge Sort$&$Heap Sort$&$Counting Sort$\\
+	\hline
+	\end{array}
+	\end{equation*}
+	\captionof{table}{Wyniki badań zależności czasu od iloci elementów dla metod $"$szybkich$"$}
+\end{figure}
+
+\subsubsection*{Wykres ilustrujący zależności czasu sortowania od ilości elementów dla metod $"$szybkich$"$, zakres liczb $ [1,n] $.}
+
+
+
+	
+	
+\end{spacing}
 	\newpage
 	\tableofcontents
 \end{document}
