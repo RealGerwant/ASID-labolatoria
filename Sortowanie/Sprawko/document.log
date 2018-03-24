@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  24 MAR 2018 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  24 MAR 2018 21:04
 entering extended mode
 **./document.tex
 (document.tex
@@ -661,26 +661,26 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 19.
  (document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 23
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 24
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -722,7 +722,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 24.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -732,9 +732,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count118
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (document.out) (document.out)
 \@outlinefile=\write3
@@ -744,90 +744,90 @@ LaTeX Info: Redefining \nameref on input line 23.
 
 {C:/Users/Piotr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 41
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 49
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 41
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 49
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptmcm.fd"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 41
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 49
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxpsycm.fd"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 50.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<zad2wsznor.pdf, id=97, pagebox=cropbox, 729.72626pt x 387.4475pt>
+<zad2wsznor.pdf, id=90, pagebox=cropbox, 729.72626pt x 387.4475pt>
 File: zad2wsznor.pdf Graphic file (type pdf)
 <use zad2wsznor.pdf>
-Package pdftex.def Info: zad2wsznor.pdf  used on input line 50. on input line 5
-0.
+Package pdftex.def Info: zad2wsznor.pdf  used on input line 58. on input line 5
+8.
 Package pdftex.def Info: Requested size: 437.83914pt x 232.47029pt on input lin
-e 50.
+e 58.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 48--53
+Overfull \hbox (15.0pt too wide) in paragraph at lines 56--61
 []$[]$ 
  []
 
-<zad2wszlog.pdf, id=98, pagebox=cropbox, 707.64375pt x 407.5225pt>
+<zad2wszlog.pdf, id=91, pagebox=cropbox, 707.64375pt x 407.5225pt>
 File: zad2wszlog.pdf Graphic file (type pdf)
 <use zad2wszlog.pdf>
-Package pdftex.def Info: zad2wszlog.pdf  used on input line 56. on input line 5
-6.
+Package pdftex.def Info: zad2wszlog.pdf  used on input line 64. on input line 6
+4.
 Package pdftex.def Info: Requested size: 424.58952pt x 244.51538pt on input lin
-e 56.
+e 64.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 54--59
+Overfull \hbox (15.0pt too wide) in paragraph at lines 62--67
 []$[]$ 
  []
 
@@ -835,350 +835,397 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 	\subsection
+l.68 	\subsection
                  *{Wnioski do podziaÅ‚u metod sortowania} [1 <./zad2wsznor.pdf>
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 72.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 73.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 69.
-[2 <./zad2wszlog.pdf>] [3]
-<zad2wolne.pdf, id=162, pagebox=cropbox, 487.8225pt x 266.9975pt>
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 79.
+[2 <./zad2wszlog.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[3] [4]
+<zad2wolne.pdf, id=161, pagebox=cropbox, 487.8225pt x 266.9975pt>
 File: zad2wolne.pdf Graphic file (type pdf)
 <use zad2wolne.pdf>
-Package pdftex.def Info: zad2wolne.pdf  used on input line 199. on input line 1
-99.
+Package pdftex.def Info: zad2wolne.pdf  used on input line 214. on input line 2
+14.
 Package pdftex.def Info: Requested size: 414.65108pt x 226.94893pt on input lin
-e 199.
- [4]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
+e 214.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
+(hyperref)                removing `math shift' on input line 219.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
+(hyperref)                removing `math shift' on input line 219.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 204.
+(hyperref)                removing `math shift' on input line 219.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 219.
+
+[5 <./zad2wolne.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 223.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 223.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 223.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 223.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 208.
+(hyperref)                removing `math shift' on input line 225.
 
-[5 <./zad2wolne.pdf>] [6] [7]
-<zad2szybkie.pdf, id=213, pagebox=cropbox, 739.76375pt x 363.3575pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+[8]
+<zad2szybkie.pdf, id=210, pagebox=cropbox, 739.76375pt x 363.3575pt>
 File: zad2szybkie.pdf Graphic file (type pdf)
 <use zad2szybkie.pdf>
-Package pdftex.def Info: zad2szybkie.pdf  used on input line 381. on input line
- 381.
+Package pdftex.def Info: zad2szybkie.pdf  used on input line 408. on input line
+ 408.
 Package pdftex.def Info: Requested size: 443.86166pt x 218.01617pt on input lin
-e 381.
- [8]
+e 408.
+ [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 386.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 386.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 386.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 386.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 391.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 391.
+(hyperref)                removing `math shift' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 391.
+(hyperref)                removing `math shift' on input line 423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 391.
+(hyperref)                removing `math shift' on input line 423.
 
-[9 <./zad2szybkie.pdf>]
-<zad3losowynorm.pdf, id=244, pagebox=cropbox, 723.7489pt x 390.3604pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 423.
+
+[10 <./zad2szybkie.pdf>]
+<zad3losowynorm.pdf, id=241, pagebox=cropbox, 723.7489pt x 390.3604pt>
 File: zad3losowynorm.pdf Graphic file (type pdf)
 <use zad3losowynorm.pdf>
-Package pdftex.def Info: zad3losowynorm.pdf  used on input line 438. on input l
-ine 438.
+Package pdftex.def Info: zad3losowynorm.pdf  used on input line 473. on input l
+ine 473.
 Package pdftex.def Info: Requested size: 434.25269pt x 234.21803pt on input lin
-e 438.
- [10]
-<zad3losowylog.pdf, id=251, pagebox=cropbox, 727.71875pt x 398.48875pt>
+e 473.
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--477
+
+ []
+
+[11]
+<zad3losowylog.pdf, id=248, pagebox=cropbox, 727.71875pt x 398.48875pt>
 File: zad3losowylog.pdf Graphic file (type pdf)
 <use zad3losowylog.pdf>
-Package pdftex.def Info: zad3losowylog.pdf  used on input line 445. on input li
-ne 445.
+Package pdftex.def Info: zad3losowylog.pdf  used on input line 482. on input li
+ne 482.
 Package pdftex.def Info: Requested size: 400.24654pt x 219.16948pt on input lin
-e 445.
+e 482.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 443--449
+Overfull \hbox (15.0pt too wide) in paragraph at lines 480--486
 []$[]$ 
  []
 
-<zad3rosnacynorm.pdf, id=252, pagebox=cropbox, 727.9687pt x 387.19556pt>
+<zad3rosnacynorm.pdf, id=249, pagebox=cropbox, 727.9687pt x 387.19556pt>
 File: zad3rosnacynorm.pdf Graphic file (type pdf)
 <use zad3rosnacynorm.pdf>
-Package pdftex.def Info: zad3rosnacynorm.pdf  used on input line 459. on input 
-line 459.
+Package pdftex.def Info: zad3rosnacynorm.pdf  used on input line 497. on input 
+line 497.
 Package pdftex.def Info: Requested size: 436.78459pt x 232.31912pt on input lin
-e 459.
-[11 <./zad3losowynorm.pdf> <./zad3losowylog.pdf
+e 497.
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--501
+
+ []
+
+[12 <./zad3losowynorm.pdf> <./zad3losowylog.pdf
 
 pdfTeX warning: pdflatex.exe (file ./zad3losowylog.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<zad3rosnacylog.pdf, id=295, pagebox=cropbox, 720.58412pt x 382.9748pt>
+<zad3rosnacylog.pdf, id=293, pagebox=cropbox, 720.58412pt x 382.9748pt>
 File: zad3rosnacylog.pdf Graphic file (type pdf)
 <use zad3rosnacylog.pdf>
-Package pdftex.def Info: zad3rosnacylog.pdf  used on input line 466. on input l
-ine 466.
+Package pdftex.def Info: zad3rosnacylog.pdf  used on input line 506. on input l
+ine 506.
 Package pdftex.def Info: Requested size: 432.3538pt x 229.78665pt on input line
- 466.
+ 506.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 464--470
+Overfull \hbox (15.0pt too wide) in paragraph at lines 504--510
 []$[]$ 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 474.
+(hyperref)                removing `math shift' on input line 512.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 474.
+(hyperref)                removing `math shift' on input line 512.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 474.
+(hyperref)                removing `math shift' on input line 512.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 474.
+(hyperref)                removing `math shift' on input line 512.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 478.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 478.
-
-<zad4001n.pdf, id=296, pagebox=cropbox, 731.73375pt x 419.5675pt>
-File: zad4001n.pdf Graphic file (type pdf)
-<use zad4001n.pdf>
-Package pdftex.def Info: zad4001n.pdf  used on input line 484. on input line 48
-4.
-Package pdftex.def Info: Requested size: 439.04364pt x 251.74243pt on input lin
-e 484.
-[12 <./zad3rosnacynorm.pdf> <./zad3rosnacylog.pdf
+[13 <./zad3rosnacynorm.pdf> <./zad3rosnacylog.pdf
 
 pdfTeX warning: pdflatex.exe (file ./zad3rosnacylog.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<zad4pamiec001n.png, id=342, 469.755pt x 201.75375pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 518.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 520.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 520.
+
+<zad4001n.pdf, id=338, pagebox=cropbox, 731.73375pt x 419.5675pt>
+File: zad4001n.pdf Graphic file (type pdf)
+<use zad4001n.pdf>
+Package pdftex.def Info: zad4001n.pdf  used on input line 526. on input line 52
+6.
+Package pdftex.def Info: Requested size: 439.04364pt x 251.74243pt on input lin
+e 526.
+[14]
+<zad4pamiec001n.png, id=343, 469.755pt x 201.75375pt>
 File: zad4pamiec001n.png Graphic file (type png)
 <use zad4pamiec001n.png>
-Package pdftex.def Info: zad4pamiec001n.png  used on input line 495. on input l
-ine 495.
+Package pdftex.def Info: zad4pamiec001n.png  used on input line 537. on input l
+ine 537.
 Package pdftex.def Info: Requested size: 399.29364pt x 171.49149pt on input lin
-e 495.
- [13 <./zad4001n.pdf>]
+e 537.
+ [15 <./zad4001n.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 500.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 500.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 504.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 504.
+(hyperref)                removing `math shift' on input line 546.
 
-<zad4100n.pdf, id=365, pagebox=cropbox, 722.7pt x 393.47pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 546.
+
+<zad4100n.pdf, id=366, pagebox=cropbox, 722.7pt x 393.47pt>
 File: zad4100n.pdf Graphic file (type pdf)
 <use zad4100n.pdf>
-Package pdftex.def Info: zad4100n.pdf  used on input line 510. on input line 51
-0.
+Package pdftex.def Info: zad4100n.pdf  used on input line 552. on input line 55
+2.
 Package pdftex.def Info: Requested size: 433.62334pt x 236.0838pt on input line
- 510.
+ 552.
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--514
+Underfull \hbox (badness 10000) in paragraph at lines 550--556
 
  []
 
-[14 <./zad4pamiec001n.png> <./zad4100n.pdf>]
-<zad4pamiec100n.png, id=389, 470.9595pt x 202.356pt>
+[16 <./zad4pamiec001n.png> <./zad4100n.pdf>]
+<zad4pamiec100n.png, id=390, 470.9595pt x 202.356pt>
 File: zad4pamiec100n.png Graphic file (type png)
 <use zad4pamiec100n.png>
-Package pdftex.def Info: zad4pamiec100n.png  used on input line 521. on input l
-ine 521.
+Package pdftex.def Info: zad4pamiec100n.png  used on input line 563. on input l
+ine 563.
 Package pdftex.def Info: Requested size: 400.31746pt x 172.0034pt on input line
- 521.
+ 563.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 570.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 528.
+(hyperref)                removing `math shift' on input line 570.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 575.
 
-[15 <./zad4pamiec100n.png>] (document.toc
-Overfull \hbox (25.69493pt too wide) in paragraph at lines 18--18
+[17 <./zad4pamiec100n.png>] (document.toc
+Overfull \hbox (25.69493pt too wide) in paragraph at lines 16--16
  \T1/ptm/b/n/10 ick Sort, przy roz-ka-ªa-dzie lo-so-wym, gdy war-to-±ci ele-men
 -tów miesz-cz¡ si¦ w prze-dzia-ªach $\OT1/ptmcm/m/n/10 [1; 0\OML/ptmcm/m/it/10 
 ; \OT1/ptmcm/m/n/10 01\OML/ptmcm/m/it/10 n\OT1/ptmcm/m/n/10 ]$\T1/ptm/b/n/10 ,$
@@ -1190,33 +1237,33 @@ Overfull \hbox (25.69493pt too wide) in paragraph at lines 18--18
 \tf@toc=\write4
 \openout4 = `document.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 542.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 542.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
+ [18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
  (document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 542.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 542.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 584.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 693F54A0D455B5FBF851690DCFA42937;2548.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
+(rerunfilecheck)             Checksum: 2E7F7E90737ED62BD92027BE8F2C9EF8;2362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
  ) 
 Here is how much of TeX's memory you used:
- 8576 strings out of 493312
- 123833 string characters out of 3138898
- 216953 words of memory out of 3000000
- 11896 multiletter control sequences out of 15000+200000
+ 8574 strings out of 493312
+ 123767 string characters out of 3138898
+ 217951 words of memory out of 3000000
+ 11894 multiletter control sequences out of 15000+200000
  63039 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,39p,814b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,39p,1355b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (17 pages, 2668127 bytes).
+Output written on document.pdf (19 pages, 2675463 bytes).
 PDF statistics:
  470 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

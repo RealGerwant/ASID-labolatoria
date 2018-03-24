@@ -14,9 +14,10 @@
 \hypersetup{
 	colorlinks=true,
 	linkcolor=blue,
-	filecolor=magenta,      
-	urlcolor=cyan,
+	filecolor=blue,      
+	urlcolor=blue,
 }
+
 \marginsize{2.5cm}{2.5cm}{2cm}{2cm}
 
 
@@ -24,6 +25,13 @@
 	
 \begin{spacing}{1.5}
 		\begin{titlepage}
+			\begin{flushright}
+				{ Wtorki 16:50\\
+					Grupa I3\\
+					Kierunek Informatyka\\
+					Wydział Informatyki\\
+					Politechnika Poznańska}
+			\end{flushright}
 		\vspace*{\fill}
 		\begin{center}
 			{\Large Algorytmy i struktury danych \\[0.1cm]
@@ -31,14 +39,14 @@
 				prowadząca: dr hab. inż. Małgorzata Sterna, prof PP}\\[0.7cm]
 			{\huge Algorytmy sortujące\\ [0.7cm]}
 			{\large autorzy:\\[0.1cm]}
-			{\Large Piotr Więtczak nr indeksu 132339,\\[0.1cm] Tomasz Chudziak nr indeksu 136691}\\[0.5cm]
+			{\large Piotr Więtczak nr indeksu 132339,\\[0.1cm] Tomasz Chudziak nr indeksu 136691}\\[0.5cm]
 			\today
 		\end{center}
 		\vspace*{\fill}
 	\end{titlepage}
 	
 	\section{Implementacja algorytmów sortujących}
-	Do implementacji metod sortowania posłużyliśmy się językiem $ C++ $, każda metoda została napisana  w odrębnej  funkcji, która za parametry przyjmuje kolejno: wskaźnik na tablicę, rozmiar sortowanej tablicy oraz jako ostatni wartość opcjonalną “reverse” typu bool, która odpowiada za to czy tablica będzie posortowana rosnąco czy malejąco. Do mierzenia czasu poszczególnych metod użyliśmy klasy $ std::chrono::high::resolution\_clock  $ z biblioteki $ chrono $.
+	Do implementacji metod sortowania posłużyliśmy się językiem $ C++ $, każda metoda została napisana  w odrębnej  funkcji, która za parametry przyjmuje kolejno: wskaźnik na tablicę, rozmiar sortowanej tablicy oraz jako ostatni wartość opcjonalną “reverse” typu bool, która odpowiada za to czy tablica będzie posortowana rosnąco czy malejąco. Do mierzenia czasu poszczególnych metod użyliśmy klasy $ std::chrono::high::resolution\_clock  $ z biblioteki $ chrono $. Program użyty do obliczanie czasów sortowań, wraz z plikami nagłówkowymi zawierającymi metody sortujące, jest dostępny w formie repozytorium git pod adresem \hyperref{goo.gl/snMdzD}{}{}{goo.gl/snMdzD}.
 	\section{Badana zależność czasu obliczeń $ t[s]$ od liczby sortowanych elementów~$ n $. }
 	
 	\subsection{Podział metod sortowania}
@@ -63,9 +71,12 @@
 	
 	\subsection{Metody $ "$wolne$" $}
 	\subsubsection{Opis algorytmów $"$wolnych$"$}
-	\subsubsection*{Insert Sort}
+	\subsubsection*{Insertion Sort (sortowanie przez wstawianie)}
+	Polega na wstawieniu kolejnego elementu z nieposortowanej części tablicy odpowiednie miejsce w posortowanej części tablicy.\\
+	
 	Zalety:
 	\begin{itemize}
+		\item wydajny dla zbiorów wstępnie posortowanych
 		\item działa w miejscu
 		\item stabilny 
 	\end{itemize}
@@ -96,7 +107,9 @@
 		\captionof{table}{Tablica złożoności obliczeniowej dla metody Insert Sort}
 	\end{figure}
 		
-		\subsubsection*{Selection Sort}
+		\subsubsection*{Selection Sort (sortowanie przez wybieranie)}
+		Polega na wyszukaniu w nieposortowanej części tablicy elementu który powinien się znaleźć w pożądanym miejscu i zamianie miejscami z tym który obecnie się tam znajduje.\\
+		
 	Zalety:
 	\begin{itemize}
 		\item działa w miejscu
@@ -130,7 +143,9 @@
 	\end{figure}
 	
 	
-			\subsubsection*{Bubble Sort}
+			\subsubsection*{Bubble Sort (sortowanie bąbelkowe)}
+			Polega na porównaniu dwóch kolejnych elementów i zamianie ich kolejności, jeśli nie pasuje ona do porządku sortowania tablicy. Sortowanie kończy się kiedy podczas przejścia nie dokonano żadnej zmiany.\\
+			
 	Zalety:
 	\begin{itemize}
 		\item działa w miejscu
@@ -201,13 +216,17 @@
 		\end{center}
 	\end{minipage}
 
-\subsubsection{Wnioski do metod $"$szybkich$"$}
+\subsubsection{Wnioski do metod $"$wolnych$"$}
+
+Metody $"$wolne$"$, są zwykle o wiele mniej efektywne od metod $"$szybkich$"$, a wraz z wzrostem ilości elementów do posortowania dysproporcja się pogłębia.
 	
 	\subsection{Metody $"$szybkie$"$}
 
 	\subsubsection{Opis algorytmów $"$szybkich$"$}
 
-		\subsubsection*{Quick Sort}
+		\subsubsection*{Quick Sort (sortowanie szybkie)}
+		Działanie algorytmu zaczyna się od wybrania elementu podziału, w badanej przez nas implementacji był to element środkowy, następnie tablica zostaje podzielona na dwie części, do początkowej przenoszone są wszystkie elementy mniejsze od elementu podziału, nie mniejsze trafiają natomiast do końcowej części. Następnie algorytm sortuje osobno w ten sam sposób części początkową i końcową. Warunkiem końcowym rekursji będzie uzyskanie w wyniku podziału tylko jednego elementu, jednoelementowa tablica nie wymaga sortowania.\\
+		
 	Zalety:
 	\begin{itemize}
 		\item działa w miejscu
@@ -241,16 +260,18 @@
 		\captionof{table}{Tablica złożoności obliczeniowej dla metody Quick Sort}
 	\end{figure}
 	
-			\subsubsection*{Merge Sort}
+			\subsubsection*{Merge Sort (sortowanie przez scalanie)}
+			Działanie metody polega na podzieleniu sortowanej tablicy na dwie równe części (jeżeli to możliwe), następnie algorytm zostaje użyty ponownie osobno dla obu części podziału, zagłębianie rekursji trwa do momentu aż do podzielenia pozostanie tylko jeden element. Na koniec powracając z rekurencji metoda łączy posortowane podciągi w jeden ciąg posortowany.\\
+			
 	Zalety:
 	\begin{itemize}
 		\item algorytm asymptotycznie optymalny
 		\item stabilny
+		\item niewrażliwy na dane wejściowe
 	\end{itemize}
 	Wady:
 	\begin{itemize}
 		\item nie działa w miejscu
-		\item wrażliwy na dane wejściowe
 	\end{itemize}
 	Inne cechy:
 	\begin{itemize}
@@ -276,15 +297,18 @@
 		\captionof{table}{Tablica złożoności obliczeniowej dla metody Merge Sort}
 	\end{figure}
 	
-			\subsubsection*{Heap Sort}
+			\subsubsection*{Heap Sort (sortowanie przez kopcowanie)}
+			Działanie metody wykorzystuje strukturę binarnego kopca zupełnego. Po utworzeniu z tablicy do posortowania kopca następuje sortowanie, polega ono na zamianę miejscami korzenia kopca z ostatnim elementem i odbudowie kopca bez udziału elementów wcześniej przeniesionych na koniec tablicy. Operację powtarza się do momentu wyczerpania elementów kopca. W ten sposób w części która nie bierze ponownego udziału w kopcowaniu powstaje posortowana tablica.\\
+						
 Zalety:
 \begin{itemize}
 	\item działa w miejscu
+	\item  mało wrażliwy na dane wejściowe
 \end{itemize}
 Wady:
 \begin{itemize}
 	\item niestabilny
-	\item wrażliwy na dane wejściowe
+
 \end{itemize}
 Inne cechy:
 \begin{itemize}
@@ -309,10 +333,13 @@ Inne cechy:
 	\captionof{table}{Tablica złożoności obliczeniowej dla metody Heap Sort}
 \end{figure}
 
-			\subsubsection*{Counting Sort}
+			\subsubsection*{Counting Sort (sortowanie przez zliczanie)}
+			
+			Polega na sprawdzeniu ile razy w tablicy wystąpił element z sortowanego zakresu, następnie algorytm sprawdza ile wystąpień elementów mniejszych od danego w występuje w sortowanej tablicy, na koniec wypisuje posortowany ciąg do tablicy wynikowej. Metoda zakłada, że elementy tablicy należą do liczb całkowitych nieujemnych.\\
+			
 Zalety:
 \begin{itemize}
-	\item bardzo szybki dla danych z małego zakresu
+	\item bardzo szybki algorytm sortowania dla danych z małego zakresu
 	\item stabilny
 \end{itemize}
 Wady:
@@ -385,8 +412,13 @@ Wady:
 
 \subsubsection{Wnioski do metod $"$szybkich$"$}
 
+Metody $"$szybkie$"$ są zwykle bardziej efektywne od metod $"$wolnych$"$, nie ma to jednak zawsze miejsca o czym przekonamy się dalszej części sprawozdania.
+
 
 \subsection{Wnioski do podziału metod sortowania}
+
+Dzieląc metody sortowania można brać pod wiele rzeczy takich jak: czas wykonywania, dodatkowe zużycie pamięci, czy wrażliwość na dane wejściowe i wiele innych. Najczęściej wyróżnia się jednak podział ze względu na właśnie te trzy czyniki, na metody $ " $szybkie$ " $ (Counting Sort, Merge Sort, Quick Sort, Heap Sort) i $"$wolne$"$ (Insertion Sort, Selection Sort, Bubble Sort), ale także na pracujące w miejscu (Insertion Sort, Selection Sort, Bubble Sort, Heap Sort, Quick Sort) i wymagające dodatkowej pamięci (Merge Sort, Counting Sort), oraz wrażliwe na dane wejściowe (Quick Sort) , mało wrażliwe na dane wejściowe (Insertion Sort, Bubble Sort, Selection Sort, Counting Sort, Heap Sort) i niewrażliwe na dane wejściowe (Merge Sort). Więcej o czynikach wspomagających wybór metody sortowania powiemy we wnioskach do sekcji 3.
+
 
 \section{Badanie zależności czasu $t$ od liczby sortowanych elementów $n$, przy rozkładach losowych i rosnących, dla metod Quick Sort z podziałem wg: skrajnego i środowego elementu, oraz dla metody Insert Sort}
 
@@ -433,12 +465,17 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 
 \subsubsection*{Wykresy ilustrujące zależności czasu sortowania od ilości elementów dla metod Quick Sort Mid, Quick Sort Right, Insertion Sort, dla rozkładu losowego.}
 
+
+
+
 \begin{minipage}[H]{\textwidth}
 	\begin{center}
 		\includegraphics[scale=0.6]{zad3losowynorm.pdf}
 		\label{fig:zad3losn}
 	\end{center}
-\end{minipage}
+\end{minipage}\\[1cm]
+
+
 
 \begin{minipage}[H]{\textwidth}
 	\begin{center}
@@ -447,11 +484,12 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 	\end{center}
 \end{minipage}
 
-\subsubsection{Wnioski do rozkładu losowego}
 
 \subsection{Rozkład rosnący}
 
 \subsubsection*{Wykresy ilustrujące zależności czasu sortowania od ilości elementów dla metod Quick Sort Mid, Quick Sort Right, Insertion Sort, dla rozkładu rosnącego.}
+
+
 	
 
 \begin{minipage}[H]{\textwidth}
@@ -459,7 +497,9 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 		\includegraphics[scale=0.6]{zad3rosnacynorm.pdf}
 		\label{fig:zad3rosn}
 	\end{center}
-\end{minipage}
+\end{minipage}\\[1cm]
+
+
 
 \begin{minipage}[H]{\textwidth}
 	\begin{center}
@@ -469,9 +509,11 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 \end{minipage}
 
 
-\subsubsection{Wnioski do rozkładu rosnącego}
-
 \subsection{Wnioski do zależności czasu $t$ od liczby sortowanych elementów $n$, przy rozkładach losowych i rosnących, dla metod Quick Sort z podziałem wg: skrajnego i środowego elementu, oraz dla metody Insert Sort}
+
+Na złożoność obliczeniową Quick Sort-a wpływa punkt podziału tablicy. Można zauważyć, że ta metoda wykorzystująca skrajny element (w przeprowadzonym badaniu prawy) radzi sobie bez porównania gorzej niż ta, wybierająca środkowy dla tablicy, która ma rozkład danych rosnący. Najprawdopodobniej wynika to z tego, że wolniejszy algorytm (dla tego typu danych) zawsze dzieli rekurencyjnie zbiór danych na jednoelementowe podzbiory, przez co ilość nie posortowanych elementów zmniejsza się tylko o jeden. Co w konsekwencji prowadzi do wywołania większej ilości rekurencji. Ponadto warto zwrócić uwagę na fakt, że dla rozkładu losowego nie można wybrać jednoznacznie szybszej metody (w 12 na 20 przypadków szybszy był Quick Sort ze skrajnym podziałem tablicy, w pozostałych 8 ze środkowym elementem). Godnym uwagi wydaje się również spostrzeżenie, że Insert Sort pomimo niewspółmiernie gorszych wyników w stosunku do Quick Sort dla danych losowych, pozostawia go daleko w tyle dla danych o rozkładzie rosnącym. Z przeprowadzonego badania można wyciągnąć wnioski, że Quick Sort radzi sobie o niebo lepiej niż Insert Sort dla danych o rozkładzie losowym, jednakże sortowanie przez proste wstawianie nieporównywalnie szybciej przejdzie przez tablicę już uporządkowaną rosnąco.
+
+Nie ma uniwersalnej metody sortowania dla każdego typu danych. Podczas wyboru algorytmu warto zwrócić uwagę na kilka aspektów. Pierwszym z nich jest zakres, z jakiego dane pochodzą, jeżeli jest on wąski, to najlepszym pomysłem będzie użyć Counting Sort-a, jednakże jeżeli pochodzi on z dużego zakresu, to ta metoda jest odradzana. Innym równie ważnym aspektem jest ilość zasobów, jakimi dysponujemy. Jeżeli nie mamy dodatkowej pamięci, przewagę zdobywają algorytmu sortujące w miejscu takie jak Insert Sort, Selection Sort czy Bubble Sort, z kolei, jeżeli ją posiadamy warto sięgnąć po metody bardziej wydajne np. Merge Sort. Kolejnym czynnikiem jest rozkład danych. Jeżeli posiadamy jakieś informacje o nim (np. czy jest rosnący, malejący lub losowy), możemy dobrać odpowiednią metodę, która przyspieszy czas trwania porządkowania informacji np. jeżeli wiemy, że dane są rosnące to rozsądnym wyborem będzie Quick Sort.
 
 \section{Badanie zależności czasu obliczeń $t$ od liczby sortowanych elementów $n$ dla metod Counting Sort, Quick Sort, przy rozkaładzie losowym, gdy wartości elementów mieszczą się w przedziałach  $ [1;0,01n] $,$ [1;100n] $. }
 
@@ -486,7 +528,7 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 		\end{center}
 	\end{minipage}
 
-Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;0,01n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować zauważalny  wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort.
+Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;0,01n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować zauważalny  wzrost zużywanej pamięci podczas metodą sortowania przez zliczanie, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą szybką.
 
 \subsubsection*{Zrzut ekranu sekcji Diagnostic Tools programu Visual Studio 2015 prezentujący, zużycie pamięci i procesora w trakcie sortowania algorytmami Counting Sort i  Quick Sort, dla rozkładu losowego w przedziale $[1;0,01n]$.}
 
@@ -499,7 +541,7 @@ Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowa
 
 \subsubsection{Wnioski do przedziału $[1;0.01n]$}
 
-Po przeanalizowaniu wyników badania można zauważyć że metoda Counting Sort działa znacznie szybciej niż Quick Sort w przedziale $[1;0,01n]$, przy trochę większym wykorzystaniu pamięci. Metoda Counting Sort sprawdza się lepiej przy sortowaniu tablic z małym zakresem liczb od Quick Sort, co czyni ją efektywniejszą, ale tylko w przypadku kiedy mamy wystarczającą ilość pamięci przeznaczonej dla procesu.
+Po przeanalizowaniu wyników badania można zauważyć że metoda sortowania przez zliczanie działa znacznie szybciej niż Quick Sort w przedziale $[1;0,01n]$, przy trochę większym wykorzystaniu pamięci. Metoda Counting Sort sprawdza się lepiej przy sortowaniu tablic z małym zakresem liczb od metody szybkiej, co czyni ją efektywniejszą, ale tylko w przypadku kiedy mamy wystarczającą ilość pamięci przeznaczonej dla procesu.
 
 \subsection{Przedział $[1;100n]$}
 
@@ -512,7 +554,7 @@ Po przeanalizowaniu wyników badania można zauważyć że metoda Counting Sort 
 	\end{center}
 \end{minipage}\\
 
-Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;100n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować nagły wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort. 
+Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;100n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować nagły wzrost zużywanej pamięci podczas metodą przez zliczanie, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą szybką. 
 
 \subsubsection*{Zrzut ekranu sekcji Diagnostic Tools programu Visual Studio 2015 prezentujący, zużycie pamięci i procesora w trakcie sortowania algorytmami Counting Sort i  Quick Sort, dla rozkładu losowego w przedziale $[1;100n]$.}
 
@@ -527,12 +569,12 @@ Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowa
 
 \subsubsection{Wnioski do przedziału $[1;100n]$}
 
-Po przeanalizowaniu wyników badania można zauważyć że metoda Quick Sort działa znacznie szybciej niż Counting Sort w przedziale $[1;100n]$, przy pioruńsko większym (w niektórych przypadkach nawet dwudziestokrotnie) wykorzystaniu pamięci. Metoda Quick Sort sprawdza się lepiej przy sortowaniu tablic z dużym zakresem liczb metody od Counting Sort, co czyni ją efektywniejszą.
+Po przeanalizowaniu wyników badania można zauważyć że metoda Quick Sort działa znacznie szybciej niż Counting Sort w przedziale $[1;100n]$, przy pioruńsko większym (w niektórych przypadkach nawet dwudziestokrotnie) wykorzystaniu pamięci. Metoda szybka sprawdza się lepiej przy sortowaniu tablic z dużym zakresem liczb od metody przez licznie, co czyni ją efektywniejszą.
 
 
 \subsection{Wnioski do badania zależności czasu obliczeń $t$ od liczby sortowanych elementów $n$ dla metod Counting Sort, Quick Sort, przy rozkładzie losowym, gdy wartości elementów mieszczą się w przedziałach  $ [1;0,01n] $,$ [1;100n] $. }
 
-Po przeprowadzeniu badana jasno widać jak ważne jest dobranie odpowiedniej metody sortowania dla swoich danych. Na efektywność użytej metody ma wpływ między innymi przedział elementów. W przypadku kiedy pracujemy na mniejszym przedziale warto wybrać metodę Counting Sort, jeżeli posiadamy wystarczającą ilość pamięci. Przy większym przedziale metoda Quick Sort staje się efektywniejsza, Counting Sort nie tylko działa wolniej, ale też zużywa wielokrotnie więcej pamięci.
+Po przeprowadzeniu badana jasno widać jak ważne jest dobranie odpowiedniej metody sortowania dla swoich danych. Na efektywność użytej metody ma wpływ między innymi przedział elementów. W przypadku kiedy pracujemy na mniejszym przedziale warto wybrać metodę sortowania przez zliczanie, jeżeli posiadamy wystarczającą ilość pamięci. Przy większym przedziale metoda Quick Sort staje się efektywniejsza, Counting Sort nie tylko działa wolniej, ale też zużywa wielokrotnie więcej pamięci.
 	
 
 	
