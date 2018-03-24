@@ -452,7 +452,9 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 		\includegraphics[scale=0.6]{zad4100n.pdf}
 		\label{fig:zad4100n}
 	\end{center}
-\end{minipage}
+\end{minipage}\\
+
+Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1,100n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować nagły wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort. 
 
 \subsubsection*{Zrzut ekranu sekcji Diagnostic Tools programu Visual Studio 2015 prezentujący, zużycie pamięci i procesora w trakcie sortowania algorytmami Counting Sort i  Quick Sort, dla rozkładu losowego w przedziale $[1;100n]$.}
 
@@ -462,6 +464,8 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 		\label{fig:zad4pamiec100n}
 	\end{center}
 \end{minipage}
+
+
 
 \subsubsection{Wnioski do przedziału $[1;100n]$}
 
