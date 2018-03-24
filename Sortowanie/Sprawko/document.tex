@@ -170,7 +170,22 @@
 			\begin{equation*}
 		\begin{array}{l|c|c|c|}
 
-		$Liczba elementów$&$Insertion Sort$&$Selection Sort$&$Bubble Sort$\\
+		$Liczba elem.$&$Insertion Sort$&$Selection Sort$&$Bubble Sort$\\
+		10000&	116,367&	343,188&	399,54\\\hline
+		20000&	443,897&	1353,49&	1553,66\\\hline
+		30000&	1031,43&	3012&	3594,1\\\hline
+		40000&	1729,67&	5245,04&	6400,49\\\hline
+		50000&	2736,71&	8192,25&	9928,66\\\hline
+		60000&	3893,3&	11588,5&	14420,7\\\hline
+		70000&	5305&	15701,2&	19430,2\\\hline
+		80000&	6920,76&	20416,9&	25364,5\\\hline
+		90000&	8782,01&	25847,5&	32131,7\\\hline
+		100000&	10820,4&	31732,1&	39683,9\\\hline
+		110000&	13004,1&	38229,9&	47605\\\hline
+		120000&	15467&	45476,8&	56842,2\\\hline
+		130000&	18181,8&	53262,1&	66675,1\\\hline
+		140000&	21019,3&	61749&	77105,2\\\hline
+		150000&	24263,4&	70873,2&	88830,4\\
 		\hline
 		\end{array}
 		\end{equation*}
@@ -334,7 +349,28 @@ Inne cechy:
 	\begin{equation*}
 	\begin{array}{l|c|c|c|c|}
 	
-	$Liczba elementów$&$Quick Sort$&$Merge Sort$&$Heap Sort$&$Counting Sort$\\
+	$Liczba elem.$&$Counting Sort$&$Heap Sort$&$Merge Sort$&$Quick Sort$\\
+	1000000&	85,9862& 441,528& 599,972&	223,697\\\hline
+	2000000& 204,386&	790,249&	1168,86&	459,433\\\hline
+	3000000&	344,066&	1281,85&	1781,07&	698,22\\\hline
+	4000000& 480,98&	1793,7&	2373,11&	938,052\\\hline
+	5000000& 617,621&	2358,77&	3014,62&	1185,58\\\hline
+	6000000& 756,102&	2902,17&	3626,7&	1433,96\\\hline
+	7000000& 901,962&	3486,93&	4246,06&	1675,53\\\hline
+	8000000& 1043,01&	4115,85&	4843,67&	1947,04\\\hline
+	9000000& 1200,79&	4700,67&	5490,97&	2185,94\\\hline
+	10000000& 	1347,63&	5347,84&	6139,22&	2446,77\\\hline
+	11000000& 	1503,04&	5980,28&	6791,13&	2704,96\\\hline
+	12000000& 	1649,68&	6614,99&	7416,89&	2969,83\\\hline
+	13000000& 	1803,17&	7291,14&	8067,89&	3210,14\\\hline
+	14000000& 	1961,38&	7964,01&	8694,71&	3489,29\\\hline
+	15000000& 	2114,89&	8658,49&	9302,72&	3724,19\\\hline
+	16000000& 	2269,11&	9285,66&	9908&	4032,19\\\hline
+	17000000& 	2432,23&	9984,3&	10570,9&	4258,68\\\hline
+	18000000& 	2597,7&	10655,1&	11213,5&	4489,62\\\hline
+	19000000& 	2740,3&	11530,3&	11864,9&	4786,57\\\hline
+	20000000& 	2896,79&	12065,7&	12529,9&	5046,56\\
+	\hline
 	\hline
 	\end{array}
 	\end{equation*}
@@ -367,12 +403,33 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 	\begin{equation*}
 	\begin{array}{l|c|c|c|c|c|c|}
 	
-	&$Insert Sort$&$Quick Sort Right$&$Quick Sort Mid$&$Insert Sort$&$Quick Sort Right$&$Quick Sort Mid$\\
-	$L. ele.$&$roz. losowy$&$roz. losowy$&$roz. losowy$&$roz.rosnący$&$roz. rosnący$&$roz. rosnący$\\
+	&$Insert Sort$&$Quick Sort R$&$Quick Sort M$&$Insert Sort$&$Quick Sort R$&$Quick Sort M$\\
+	$Liczba. elem.$&$roz. losowy$&$roz. losowy$&$roz. losowy$&$roz.rosnący$&$roz. rosnący$&$roz. rosnący$\\\hline
+	10000&	113,203&	1,6697&	1,76432&	0,032714&	155,83&	0,838059\\\hline
+	20000&	437,488&	3,39137&	3,60882&	0,065428&	509,5&	1,72166\\\hline
+	30000&	984,901&	5,20155&	5,21053&	0,096218&	969,508&	2,61136\\\hline
+	40000&	1735,75&	7,16728&	7,09833&	0,127649&	1590,15&	3,52479\\\hline
+	50000&	2702,44&	9,20614&	9,80398&	0,156515&	2498,85&	4,63739\\\hline
+	60000&	3912,19&	11,4185&	11,567&	0,195002&	3675,9&	5,46967\\\hline
+	70000&	5331,38&	13,4157&	12,9942&	0,217132&	4884,01&	6,15699\\\hline
+	80000&	6932,69&	15,1264&	15,5626&	0,265882&	6331,66&	7,15702\\\hline
+	90000&	8767,07&	16,623&	16,5934&	0,31335&	7946&	8,44217\\\hline
+	100000&	10802,7&	18,4383&	18,6365&	0,331311&	9934,8&	9,62822\\\hline
+	110000&	13141,5&	20,523&	21,3091&	0,351517&	11940&	9,6619\\\hline
+	120000&	15639,8&	22,4413&	22,4955&	0,386476&	13993,6&	10,8232\\\hline
+	130000&	18263,4&	24,3281&	24,3358&	0,409889&	16322,7&	11,2511\\\hline
+	140000&	21317,5&	26,8089&	26,5324&	0,425926&	18797&	11,8903\\\hline
+	150000&	24363,9&	28,5161&	28,5139&	0,459281&	21520,3&	13,2566\\\hline
+	160000&	27679&	31,3674&	31,224&	0,505466&	24480,6&	14,1598\\\hline
+	170000&	31397,9&	32,184&	32,2783&	0,535934&	27719,3&	15,5934\\\hline
+	180000&	35062,8&	35,0455&	34,6744&	0,54748&	31037,2&	16,4565\\\hline
+	190000&	38904,7&	36,609&	36,2957&	0,586288&	34542,1&	19,0432\\\hline
+	200000&	43261,1&	39,1665&	40,5784&	0,701429&	38319,8&	19,7654\\
+	
 	\hline
 	\end{array}
 	\end{equation*}
-	\captionof{table}{Wyniki badań zależności czasu od ilości elementów dla metod Quick Sort Mid, Quick Sort Right, Insertion Sort, dla rozkładów losowego i rosnącego.}
+	\captionof{table}{Wyniki badań zależności czasu od ilości elementów dla metod Quick Sort M (z podziałem według środkowego elementu), Quick Sort R (z podziałem według skrajnego elementu), Insertion Sort, dla rozkładów losowego i rosnącego.}
 \end{figure}
 
 \subsection{Rozkład losowy}
@@ -432,6 +489,8 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 		\end{center}
 	\end{minipage}
 
+Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;0,01n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować zauważalny  wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort.
+
 \subsubsection*{Zrzut ekranu sekcji Diagnostic Tools programu Visual Studio 2015 prezentujący, zużycie pamięci i procesora w trakcie sortowania algorytmami Counting Sort i  Quick Sort, dla rozkładu losowego w przedziale $[1;0,01n]$.}
 
 	\begin{minipage}[H]{\textwidth}
@@ -442,6 +501,8 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 	\end{minipage}
 
 \subsubsection{Wnioski do przedziału $[1;0.01n]$}
+
+Po przeanalizowaniu wyników badania można zauważyć że metoda Counting Sort działa znacznie szybciej niż Quick Sort w przedziale $[1;0,01n]$, przy trochę większym wykorzystaniu pamięci. Metoda Counting Sort sprawdza się lepiej przy sortowaniu tablic z małym zakresem liczb od Quick Sort, co czyni ją efektywniejszą, ale tylko w przypadku kiedy mamy wystarczającą ilość pamięci przeznaczonej dla procesu.
 
 \subsection{Przedział $[1;100n]$}
 
@@ -454,7 +515,7 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 	\end{center}
 \end{minipage}\\
 
-Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1,100n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować nagły wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort. 
+Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowania o rozmiarze $n$ z wartościami z przedziału $[1;100n]$, skopiowanie wylosowanej tablicy do tablicy pomocniczej, sortowanie metodą Quick Sort z pomiarem czasu, przywrócenie posortowanej tablicy do stanu przed sortowaniem przy użyciu tablicy pomocniczej, sortowanie metodą Counting Sort z pomiarem czasu, zwiększenie rozmiaru $n$ i ponowne przeprowadzenie całego procesu, do momentu aż $n$ osiągnie pożądaną wartość.	Dzięki takiemu rozwiązaniu w sekcji Diagnostic Tools programu Visual Studio 2015 można było obserwować nagły wzrost zużywanej pamięci podczas metodą Counting Sort, w porównaniu do ilości pamięci używanej w trakcie sortowania metodą Quick Sort. 
 
 \subsubsection*{Zrzut ekranu sekcji Diagnostic Tools programu Visual Studio 2015 prezentujący, zużycie pamięci i procesora w trakcie sortowania algorytmami Counting Sort i  Quick Sort, dla rozkładu losowego w przedziale $[1;100n]$.}
 
@@ -469,8 +530,12 @@ Badanie odbywało się w sposób następujący: wylosowanie tablicy do posortowa
 
 \subsubsection{Wnioski do przedziału $[1;100n]$}
 
+Po przeanalizowaniu wyników badania można zauważyć że metoda Quick Sort działa znacznie szybciej niż Counting Sort w przedziale $[1;100n]$, przy szalenie większym (w niektórych przypadkach nawet dwudziestokrotnie) wykorzystaniu pamięci. Metoda Quick Sort sprawdza się lepiej przy sortowaniu tablic z dużym zakresem liczb metody od Counting Sort, co czyni ją efektywniejszą.
+
 
 \subsection{Wnioski do badania zależności czasu obliczeń $t$ od liczby sortowanych elementów $n$ dla metod Counting Sort, Quick Sort, przy rozkładzie losowym, gdy wartości elementów mieszczą się w przedziałach  $ [1;0,01n] $,$ [1;100n] $. }
+
+Po przeprowadzeniu badana jasno widać jak ważne jest dobranie odpowiedniej metody sortowania dla swoich danych. Na efektywność użytej metody ma wpływ między innymi przedział elementów. W przypadku kiedy pracujemy na mniejszym przedziale warto wybrać metodę Counting Sort, jeżeli posiadamy wystarczającą ilość pamięci. Przy większym przedziale metoda Quick Sort staje się efektywniejsza, Counting Sort nie tylko działa wolniej, ale też zużywa wielokrotnie więcej pamięci.
 	
 
 	
