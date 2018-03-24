@@ -38,11 +38,11 @@
 	\end{titlepage}
 	
 	\section{Implementacja algorytmów sortujących}
-	Do implementacji metod sortowania posłużyliśmy się językiem $ C++ $, każda metoda została napisana  w odrębnej  funkcji, która za parametry przyjmuje kolejno: wskaźnik na tablicę, rozmiar sortowanej tablicy oraz jako ostatni wartość opcjonalną “reverse” typu bool, która odpowiada za to czy tablica będzie posortowana malejąco. Do mierzenia czasu poszczególnych metod użyliśmy klasy $ std::chrono::high::resolution\_clock  $ z biblioteki $ chrono $.
+	Do implementacji metod sortowania posłużyliśmy się językiem $ C++ $, każda metoda została napisana  w odrębnej  funkcji, która za parametry przyjmuje kolejno: wskaźnik na tablicę, rozmiar sortowanej tablicy oraz jako ostatni wartość opcjonalną “reverse” typu bool, która odpowiada za to czy tablica będzie posortowana rosnąco czy malejąco. Do mierzenia czasu poszczególnych metod użyliśmy klasy $ std::chrono::high::resolution\_clock  $ z biblioteki $ chrono $.
 	\section{Badana zależność czasu obliczeń $ t[s]$ od liczby sortowanych elementów~$ n $. }
 	
 	\subsection{Podział metod sortowania}
-	W celu zachowania przejrzystości  otrzymanych danych podzieliliśmy metody na dwie grupy, "wolne" (Insertion Sort, Selection Sort, Bubble Sort) i "szybkie" (Counting Sort, Quick Sort, Merge Sort, Heap Sort). Różnice w zależności czasu czasu obliczeń $ t[s]$ od liczby sortowanych elementów~$ n $ dla algorytmów $ " $wolnych$ " $ i $ " $szybkich$ " $ przedstawiają poniższe wykresy.\\
+	W celu zachowania przejrzystości  otrzymanych danych podzieliliśmy metody na dwie grupy, "wolne" (Insertion Sort, Selection Sort, Bubble Sort) i $ " $szybkie$ " $ (Counting Sort, Quick Sort, Merge Sort, Heap Sort). Różnice w zależności czasu obliczeń $ t[s]$ od liczby sortowanych elementów~$ n $ dla algorytmów $ " $wolnych$ " $ i $ " $szybkich$ " $ przedstawiają poniższe wykresy.\\
 	
 	
 \begin{minipage}[H]{\textwidth}
@@ -71,7 +71,8 @@
 	\end{itemize}
 	Wady:
 	\begin{itemize}
-		\item 
+		\item wolniejszy od metod "szybkich"
+		\item mało wydajne dla dużej ilości elementów do posortowania
 	\end{itemize}
 	Inne cechy:
 	\begin{itemize}
@@ -103,7 +104,8 @@
 	\end{itemize}
 	Wady:
 	\begin{itemize}
-		\item 
+		\item wolniejszy od metod "szybkich"
+		\item mało wydajne dla dużej ilości elementów do posortowania
 	\end{itemize}
 	Inne cechy:
 	\begin{itemize}
@@ -136,7 +138,8 @@
 	\end{itemize}
 	Wady:
 	\begin{itemize}
-		\item 
+		\item wolniejszy od metod "szybkich"
+		\item mało wydajne dla dużej ilości elementów do posortowania
 	\end{itemize}
 	Inne cechy:
 	\begin{itemize}
@@ -410,7 +413,7 @@ W dalszej części sprawozdania algorytm Quick Sort z podziałem według środko
 
 \subsection{Wnioski do zależności czasu $t$ od liczby sortowanych elementów $n$, przy rozkładach losowych i rosnących, dla metod Quick Sort z podziałem wg: skrajnego i środowego elementu, oraz dla metody Insert Sort}
 
-\section{Badanie zależności czasu obliczeń $t$ od liczby sortowanych elementów $n$ dal metod Counting Sort, Quick Sort, przy rozkaładzie losowym, gdy wartości elementów mieszczą się w przedziałach  $ [1;0,01n] $,$ [1;100n] $. }
+\section{Badanie zależności czasu obliczeń $t$ od liczby sortowanych elementów $n$ dla metod Counting Sort, Quick Sort, przy rozkaładzie losowym, gdy wartości elementów mieszczą się w przedziałach  $ [1;0,01n] $,$ [1;100n] $. }
 
 \subsection{Przedział $[1;0,01n]$}
 
