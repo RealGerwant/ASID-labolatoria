@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  26 MAR 2018 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.26)  26 MAR 2018 20:45
 entering extended mode
 **./document.tex
 (document.tex
@@ -897,7 +897,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
  []
 
 [3] [4]
-<zad2wolne.pdf, id=161, pagebox=cropbox, 487.8225pt x 266.9975pt>
+<zad2wolne.pdf, id=158, pagebox=cropbox, 487.8225pt x 266.9975pt>
 File: zad2wolne.pdf Graphic file (type pdf)
 <use zad2wolne.pdf>
 Package pdftex.def Info: zad2wolne.pdf  used on input line 214. on input line 2
@@ -975,7 +975,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--339
  []
 
 [8]
-<zad2szybkie.pdf, id=210, pagebox=cropbox, 739.76375pt x 363.3575pt>
+<zad2szybkie.pdf, id=207, pagebox=cropbox, 739.76375pt x 363.3575pt>
 File: zad2szybkie.pdf Graphic file (type pdf)
 <use zad2szybkie.pdf>
 Package pdftex.def Info: zad2szybkie.pdf  used on input line 408. on input line
@@ -1016,7 +1016,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 423.
 
 [10 <./zad2szybkie.pdf>]
-<zad3losowynorm.pdf, id=241, pagebox=cropbox, 723.7489pt x 390.3604pt>
+<zad3losowynorm.pdf, id=238, pagebox=cropbox, 723.7489pt x 390.3604pt>
 File: zad3losowynorm.pdf Graphic file (type pdf)
 <use zad3losowynorm.pdf>
 Package pdftex.def Info: zad3losowynorm.pdf  used on input line 473. on input l
@@ -1029,7 +1029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--477
  []
 
 [11]
-<zad3losowylog.pdf, id=248, pagebox=cropbox, 727.71875pt x 398.48875pt>
+<zad3losowylog.pdf, id=245, pagebox=cropbox, 727.71875pt x 398.48875pt>
 File: zad3losowylog.pdf Graphic file (type pdf)
 <use zad3losowylog.pdf>
 Package pdftex.def Info: zad3losowylog.pdf  used on input line 482. on input li
@@ -1041,7 +1041,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 480--486
 []$[]$ 
  []
 
-<zad3rosnacynorm.pdf, id=249, pagebox=cropbox, 727.9687pt x 387.19556pt>
+<zad3rosnacynorm.pdf, id=246, pagebox=cropbox, 727.9687pt x 387.19556pt>
 File: zad3rosnacynorm.pdf Graphic file (type pdf)
 <use zad3rosnacynorm.pdf>
 Package pdftex.def Info: zad3rosnacynorm.pdf  used on input line 497. on input 
@@ -1058,7 +1058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--501
 pdfTeX warning: pdflatex.exe (file ./zad3losowylog.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
-<zad3rosnacylog.pdf, id=293, pagebox=cropbox, 720.58412pt x 382.9748pt>
+<zad3rosnacylog.pdf, id=290, pagebox=cropbox, 720.58412pt x 382.9748pt>
 File: zad3rosnacylog.pdf Graphic file (type pdf)
 <use zad3rosnacylog.pdf>
 Package pdftex.def Info: zad3rosnacylog.pdf  used on input line 506. on input l
@@ -1131,7 +1131,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 520.
 
-<zad4001n.pdf, id=338, pagebox=cropbox, 731.73375pt x 419.5675pt>
+<zad4001n.pdf, id=335, pagebox=cropbox, 731.73375pt x 419.5675pt>
 File: zad4001n.pdf Graphic file (type pdf)
 <use zad4001n.pdf>
 Package pdftex.def Info: zad4001n.pdf  used on input line 526. on input line 52
@@ -1139,7 +1139,7 @@ Package pdftex.def Info: zad4001n.pdf  used on input line 526. on input line 52
 Package pdftex.def Info: Requested size: 439.04364pt x 251.74243pt on input lin
 e 526.
 [14]
-<zad4pamiec001n.png, id=343, 469.755pt x 201.75375pt>
+<zad4pamiec001n.png, id=340, 469.755pt x 201.75375pt>
 File: zad4pamiec001n.png Graphic file (type png)
 <use zad4pamiec001n.png>
 Package pdftex.def Info: zad4pamiec001n.png  used on input line 537. on input l
@@ -1163,7 +1163,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 546.
 
-<zad4100n.pdf, id=366, pagebox=cropbox, 722.7pt x 393.47pt>
+<zad4100n.pdf, id=363, pagebox=cropbox, 722.7pt x 393.47pt>
 File: zad4100n.pdf Graphic file (type pdf)
 <use zad4100n.pdf>
 Package pdftex.def Info: zad4100n.pdf  used on input line 552. on input line 55
@@ -1176,7 +1176,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 550--556
  []
 
 [16 <./zad4pamiec001n.png> <./zad4100n.pdf>]
-<zad4pamiec100n.png, id=390, 470.9595pt x 202.356pt>
+<zad4pamiec100n.png, id=387, 470.9595pt x 202.356pt>
 File: zad4pamiec100n.png Graphic file (type png)
 <use zad4pamiec100n.png>
 Package pdftex.def Info: zad4pamiec100n.png  used on input line 563. on input l
@@ -1224,16 +1224,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 575.
 
-[17 <./zad4pamiec100n.png>] (document.toc
-Overfull \hbox (25.69493pt too wide) in paragraph at lines 16--16
- \T1/ptm/b/n/10 ick Sort, przy roz-ka-ªa-dzie lo-so-wym, gdy war-to-±ci ele-men
--tów miesz-cz¡ si¦ w prze-dzia-ªach $\OT1/ptmcm/m/n/10 [1; 0\OML/ptmcm/m/it/10 
-; \OT1/ptmcm/m/n/10 01\OML/ptmcm/m/it/10 n\OT1/ptmcm/m/n/10 ]$\T1/ptm/b/n/10 ,$
-\OT1/ptmcm/m/n/10 [1; 100\OML/ptmcm/m/it/10 n\OT1/ptmcm/m/n/10 ]$\T1/ptm/b/n/10
- . 
- []
-
-)
+[17 <./zad4pamiec100n.png>] (document.toc)
 \tf@toc=\write4
 \openout4 = `document.toc'.
 
@@ -1244,26 +1235,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 584.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 2E7F7E90737ED62BD92027BE8F2C9EF8;2362.
+(rerunfilecheck)             Checksum: D1E0A23A9491CE5F27172624D45E5C0A;2366.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
  ) 
 Here is how much of TeX's memory you used:
- 8574 strings out of 493312
- 123767 string characters out of 3138898
+ 8572 strings out of 493312
+ 123739 string characters out of 3138898
  217951 words of memory out of 3000000
- 11894 multiletter control sequences out of 15000+200000
+ 11892 multiletter control sequences out of 15000+200000
  63039 words of font info for 117 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,39p,1355b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,39p,1349b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (19 pages, 2675468 bytes).
+Output written on document.pdf (19 pages, 2674944 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
+ 467 PDF objects out of 1000 (max. 8388607)
  76 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
