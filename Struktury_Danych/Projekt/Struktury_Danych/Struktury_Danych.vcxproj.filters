@@ -23,9 +23,6 @@
     <ClInclude Include="QuickSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShakeSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ArrayCreating.h">
       <Filter>Header Files</Filter>
     </ClInclude>

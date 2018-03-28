@@ -5,10 +5,23 @@
 #include <iostream>
 #include <ctime>
 #include <random>
-#include "ShakeSort.h"
-#include <math.h>
 
-
+void garbageSort(int* A, int end_index)
+{
+	for (int i = end_index; i > 0; i--)
+	{
+		if (A[i - 1] > A[i])
+		{
+			int temp = A[i];
+			A[i] = A[i - 1];
+			A[i - 1] = temp;
+		}
+		else
+		{
+			break;
+		}
+	}
+}
 
 bool IsVarInSortedArrayBinary(int* Array, int looking_for, int start_index, int end_index)
 {
@@ -66,7 +79,7 @@ void makeListWithUniqueElements(int *A, int size)
 			{
 				A[i] = tmp;
 				B[i] = tmp;
-				ShakeSort(B, i+1);
+				garbageSort(B,i);
 				break;
 			}
 
