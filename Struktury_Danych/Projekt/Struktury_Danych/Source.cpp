@@ -5,13 +5,23 @@
 #include <chrono>
 #include <fstream>
 #include "ArrayCreating.h"
+#include "Lista.h"
 
 
 
 
 int main()
 {
-	std::ofstream slow;
+
+	lista tab;
+	int a = 10;
+	for (int i = 0; i<a; i++) {
+		tab.dodajEle(i);
+	}
+	//tab.piszEle();
+	std::cout << czyJestElement(2, &tab) << std::endl;
+
+/*	std::ofstream slow;
 	slow.open("binary2.txt");
 	int* arr;
 	for (int i = 10000; i <= 200000; i+=10000)
@@ -26,6 +36,6 @@ int main()
 		slow << i << " " << time.count() << std::endl;
 		std::cout << i << "done" << std::endl;
 
-	}
+	}*/
 	system("pause");
 }

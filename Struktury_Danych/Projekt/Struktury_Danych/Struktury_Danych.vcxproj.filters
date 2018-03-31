@@ -26,5 +26,8 @@
     <ClInclude Include="ArrayCreating.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Lista.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
