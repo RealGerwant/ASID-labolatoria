@@ -90,4 +90,12 @@ void makeListWithUniqueElements(int *A, int size)
 }
 
 
+void CopyArray(int* CopyFrom, int* CopyTo, int size_of_array)
+{
+	for (int i = 0; i < size_of_array; i++)
+	{
+		CopyTo[i] = CopyFrom[i];
+	}
+}
+
 #endif // !ArrayCrearing_h

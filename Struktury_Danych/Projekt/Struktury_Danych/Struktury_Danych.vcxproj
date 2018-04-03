@@ -82,6 +82,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <StackReserveSize>10000000000</StackReserveSize>
+    </Link>
+    <Link>
+      <StackCommitSize>10</StackCommitSize>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -114,8 +120,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayCreating.h" />
+    <ClInclude Include="BST.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="Searching.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

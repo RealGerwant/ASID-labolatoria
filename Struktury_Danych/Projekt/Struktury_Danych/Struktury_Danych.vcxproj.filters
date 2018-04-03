@@ -29,5 +29,11 @@
     <ClInclude Include="Lista.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Searching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
