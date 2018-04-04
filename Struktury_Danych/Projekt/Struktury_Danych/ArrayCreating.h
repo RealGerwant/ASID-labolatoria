@@ -98,4 +98,19 @@ void CopyArray(int* CopyFrom, int* CopyTo, int size_of_array)
 	}
 }
 
+void BinaryPartition(int* ArrayToPartition, int* ArrayTo, int start_index, int end_index,int index_to_put)
+{
+
+
+	if (start_index <= end_index)
+	{
+		int mid = (start_index + end_index)/ 2;
+		ArrayTo[index_to_put] = ArrayToPartition[mid];
+		std::cout << "I: " << ArrayToPartition[mid]<<std::endl;
+		BinaryPartition(ArrayToPartition, ArrayTo, start_index, mid - 1, ++index_to_put);
+		BinaryPartition(ArrayToPartition, ArrayTo, mid + 1,end_index, ++index_to_put);
+	}
+}
+
+
 #endif // !ArrayCrearing_h

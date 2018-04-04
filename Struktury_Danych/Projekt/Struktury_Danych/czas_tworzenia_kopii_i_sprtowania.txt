@@ -1,4 +1,2 @@
-10000 2.84501 miloseconds
-20000 5.95228 miloseconds
-30000 9.11586 miloseconds
-40000 12.1657 miloseconds
+10000 2.93319 miloseconds
+20000 6.08426 miloseconds

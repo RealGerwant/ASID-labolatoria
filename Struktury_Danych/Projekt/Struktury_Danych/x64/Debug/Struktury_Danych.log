@@ -1,2 +1,4 @@
-﻿  Struktury_Danych.vcxproj -> C:\Users\Piotr\Documents\GitHub\ASID-laboratoria\Struktury_Danych\Projekt\x64\Debug\Struktury_Danych.exe
+﻿  Source.cpp
+c:\users\piotr\documents\github\asid-laboratoria\struktury_danych\projekt\struktury_danych\arraycreating.h(62): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Struktury_Danych.vcxproj -> C:\Users\Piotr\Documents\GitHub\ASID-laboratoria\Struktury_Danych\Projekt\x64\Debug\Struktury_Danych.exe
   Struktury_Danych.vcxproj -> C:\Users\Piotr\Documents\GitHub\ASID-laboratoria\Struktury_Danych\Projekt\x64\Debug\Struktury_Danych.pdb (Partial PDB)
