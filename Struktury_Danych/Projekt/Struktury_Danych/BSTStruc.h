@@ -5,10 +5,10 @@
 using namespace std;
 
 struct treeS {
-	int wartosc;
-	treeS *korzen;
-	treeS *lewy;
-	treeS *prawy;
+	int wartosc=-1;
+	treeS *korzen=0;
+	treeS *lewy=0;
+	treeS *prawy=0;
 };
 void dodajElement(treeS *tab, int a) {
 	treeS *wsk;

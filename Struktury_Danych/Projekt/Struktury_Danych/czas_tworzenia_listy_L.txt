@@ -1,1 +1,1 @@
-10000 742.671 miliseconds
+10000 733.632 miliseconds

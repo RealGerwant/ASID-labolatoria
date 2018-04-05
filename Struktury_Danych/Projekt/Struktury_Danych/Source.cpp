@@ -46,10 +46,6 @@ int main()
 		lista L;
 		tree TR,TB;
 		treeS TRs, TBs;
-		TRs.wartosc = -1;
-		TRs.korzen = 0;
-		TRs.lewy = 0;
-		TRs.prawy = 0;
 		makeListWithUniqueElements(A, i);
 		auto start = std::chrono::high_resolution_clock::now();
 		CopyArray(A, B, i);
