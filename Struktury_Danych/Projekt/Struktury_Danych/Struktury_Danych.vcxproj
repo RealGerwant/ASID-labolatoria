@@ -121,6 +121,8 @@
   <ItemGroup>
     <ClInclude Include="ArrayCreating.h" />
     <ClInclude Include="BST.h" />
+    <ClInclude Include="BSTStruc.h" />
+    <ClInclude Include="ListStruc.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="Searching.h" />

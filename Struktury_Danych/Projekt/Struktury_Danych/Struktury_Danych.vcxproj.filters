@@ -35,5 +35,11 @@
     <ClInclude Include="Searching.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ListStruc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BSTStruc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
