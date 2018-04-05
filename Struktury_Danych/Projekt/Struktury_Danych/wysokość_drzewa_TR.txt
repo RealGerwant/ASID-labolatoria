@@ -1,1 +1,6 @@
-10000 33 wysokoœæ
+10000 30 wysokoœæ
+20000 34 wysokoœæ
+30000 35 wysokoœæ
+40000 37 wysokoœæ
+50000 36 wysokoœæ
+60000 40 wysokoœæ

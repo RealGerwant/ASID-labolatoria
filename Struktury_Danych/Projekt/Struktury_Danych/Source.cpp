@@ -10,11 +10,11 @@
 #include "Searching.h"
 #include <Windows.h>
 
-#define S 11
+#define S 10
  
 int main()
 {
-	int* A;
+/*	int* A;
 	int* B;
 	B = new int[S];
 	A = new int[S];
@@ -25,14 +25,14 @@ int main()
 		std::cout << A[i] << " ";
 	}
 	std::cout << std::endl;
-	BinaryPartition(A, B, 0, S - 1,0);
+	BinaryPartition(A, B,S);
 	for (int i = 0; i < S; i++)
 	{
 		std::cout << B[i] << " ";
 	}
 	std::cout << std::endl;
-
-/*	std::ofstream CB,SSB,SBB,CL,SL,CTR,HTR,STR;
+	*/
+	std::ofstream CB,SSB,SBB,CL,SL,CTR,HTR,STR,CTB,HTB,STB;
 	CB.open("czas_tworzenia_kopii_i_sprtowania.txt");
 	SSB.open("czas_przeszukiwania_wycieczajacego.txt");
 	SBB.open("czas_przeszukiwania_binarnego.txt");
@@ -41,6 +41,9 @@ int main()
 	CTR.open("czas_tworzenia_drzewa_TR.txt");
 	HTR.open("wysokoœæ_drzewa_TR.txt");
 	STR.open("czas_przeszukiwania_drzewa_TR.txt");
+	CTB.open("czas_tworzenia_drzewa_TB.txt");
+	HTB.open("wysokoœæ_drzewa_TB.txt");
+	STB.open("czas_przeszukiwania_drzewa_TB.txt");
 
 	for (int i = 10000; i <= 200000; i+=10000)
 	{
@@ -49,7 +52,7 @@ int main()
 		A = new int[i];
 		B = new int[i];
 		lista L;
-		tree TR;
+		tree TR,TB;
 		makeListWithUniqueElements(A, i);
 		auto start = std::chrono::high_resolution_clock::now();
 		CopyArray(A, B, i);
@@ -92,7 +95,7 @@ int main()
 		auto SLstart = std::chrono::high_resolution_clock::now();
 		for (int j = 0; j < i; j++)
 		{
-			czyJestElement(A[j], &L);
+			L.czyJestElement(A[j]);
 		}
 		auto SLend = std::chrono::high_resolution_clock::now();
 		std::chrono::duration<double, milli> SLtime = SLend - SLstart;
@@ -124,11 +127,30 @@ int main()
 		//tworzenie TB
 		int* C;
 		C = new int[i];
-
-
-
-
+		BinaryPartition(B, C, i);
+		auto CTBstart = std::chrono::high_resolution_clock::now();
+		for (int j = 0; j < i; j++)
+		{
+			TB.dodajElement(C[j]);
+		}
+		auto CTBend = std::chrono::high_resolution_clock::now();
+		std::chrono::duration<double, milli> CTBtime = CTBend - CTBstart;
+		CTB << i <<" "<< CTBtime.count() << " miliseconds" << std::endl;
+		std::cout << i << " CBT done"<<std::endl;
+		//wysokoœæ drzewa TB
+		HTB << i << " " << TB.zbadajWysokosc() << " wysokoœæ" << std::endl;
+		std::cout << i << " HTB done"<<std::endl;
+		//przeszukiwanie TB
+		auto STBstart = std::chrono::high_resolution_clock::now();
+		for (int j = 0; j < i; j++)
+		{
+			TB.czyJest(A[j]);
+		}
+		auto STBend = std::chrono::high_resolution_clock::now();
+		std::chrono::duration<double, milli> STBtime = STBend - STBstart;
+		STB << i << " " << STBtime.count() << " miliseconds" << std::endl;
+		std::cout << i << " STB done" << std::endl;
 		std::cout << "##################################" << std::endl;
-	}*/
+	}
 	system("pause");
 }

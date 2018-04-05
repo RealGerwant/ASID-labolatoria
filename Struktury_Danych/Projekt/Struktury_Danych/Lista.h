@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 class lista {
 public:
 	int wartosc;
@@ -15,8 +16,7 @@ public:
 		this->nastepna = 0;
 		this->wartosc = -1;
 	}
-
-void dodajEle(int a) {
+	void dodajEle(int a) {
 		if (this->nastepna == 0) {
 			lista *ele = new lista;
 			ele->wartosc = a;
@@ -32,8 +32,7 @@ void dodajEle(int a) {
 		ele->wartosc = a;
 		return;
 	}
-
-void piszEle() {
+	void piszEle() {
 		lista *ele = this->nastepna;
 		while (ele->nastepna) {
 			cout << ele->wartosc << endl;
@@ -42,18 +41,18 @@ void piszEle() {
 		cout << ele->wartosc << endl;
 		return;
 	}
+	bool czyJestElement(int a) {
+		lista *l = this->nastepna;
+		int licznik = 0;
+		while (l->nastepna) {
+			if (l->wartosc == a)
+				return true;
+			l = l->nastepna;
+		}
+		if (l->wartosc == a)
+			return true;
+		return false;
+	}
 };
-
-int czyJestElement(int a, lista *wsk, int licznik = -1) {
-	if (wsk->nastepna == 0)
-		if (wsk->wartosc == a)
-			return licznik;
-		else
-			return -1;
-	if (wsk->wartosc == a)
-		return licznik;
-	else
-		return czyJestElement(a, wsk->nastepna, ++licznik);
-}
 
 #endif // !Lista_h

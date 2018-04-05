@@ -1,1 +1,6 @@
-10000 2708.24 miliseconds
+10000 777.115 miliseconds
+20000 3091.31 miliseconds
+30000 6865.69 miliseconds
+40000 12701.6 miliseconds
+50000 20597.2 miliseconds
+60000 26457.7 miliseconds
