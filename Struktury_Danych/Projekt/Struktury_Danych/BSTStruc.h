@@ -20,8 +20,6 @@ void dodajElement(treeS *tab, int a) {
 			treeS *ele = new treeS;
 			wsk->korzen = ele;
 			ele->wartosc = a;
-			ele->lewy = 0;
-			ele->prawy = 0;
 			return;
 		}
 		else {
@@ -36,8 +34,6 @@ void dodajElement(treeS *tab, int a) {
 		wsk->lewy = ele;
 		ele->korzen = wsk;
 		ele->wartosc = a;
-		ele->lewy = 0;
-		ele->prawy = 0;
 		return;
 	}
 	//prawa pusta
@@ -46,8 +42,6 @@ void dodajElement(treeS *tab, int a) {
 		wsk->prawy = ele;
 		ele->korzen = wsk;
 		ele->wartosc = a;
-		ele->lewy = 0;
-		ele->prawy = 0;
 		return;
 	}
 	//lewy zajecty
