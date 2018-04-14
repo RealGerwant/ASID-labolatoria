@@ -1,0 +1,2 @@
+\select@language {polish}
+\contentsline {section}{\numberline {1}Opis implementacji i czasy tworzenia wybranych struktur danych}{1}{section.1}
