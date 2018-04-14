@@ -16,7 +16,7 @@
 int main()
 {
 	std::ofstream CB,SSB,SBB,CL,SL,CTR,HTR,STR,CTB,HTB,STB,ClS,SlS,CTRs, HTRs, STRs, CTBs, HTBs, STBs;
-	CB.open("czas_tworzenia_kopii_i_sprtowania.txt");
+	CB.open("czas_tworzenia_kopii_i_sortowania.txt");
 	SSB.open("czas_przeszukiwania_wycieczajacego.txt");
 	SBB.open("czas_przeszukiwania_binarnego.txt");
 	CL.open("czas_tworzenia_listy_L.txt");
@@ -27,16 +27,14 @@ int main()
 	CTB.open("czas_tworzenia_drzewa_TB.txt");
 	HTB.open("wysokoœæ_drzewa_TB.txt");
 
-	for (int i = 10000; i <= 200000; i+=10000)
+	for (int i = 10000; i <= 1000000; i+=10000)
 	{
 		int* A;
 		int* B;
 		A = new int[i];
 		B = new int[i];
-		listStruc lS;
 		lista L;
 		tree TR,TB;
-		treeS TRs, TBs;
 		makeListWithUniqueElements(A, i);
 		auto start = std::chrono::high_resolution_clock::now();
 		CopyArray(A, B, i);
@@ -69,7 +67,8 @@ int main()
 		auto CLstart = std::chrono::high_resolution_clock::now();
 		for (int j = 0; j < i; j++)
 		{
-			L.dodajEle(A[j]);
+			L.dodajElement(A[j]);
+
 		}
 		auto CLend = std::chrono::high_resolution_clock::now();
 		std::chrono::duration<double, milli> CLtime = CLend - CLstart;
@@ -79,7 +78,8 @@ int main()
 		auto SLstart = std::chrono::high_resolution_clock::now();
 		for (int j = 0; j < i; j++)
 		{
-			L.czyJestElement(A[j]);
+			L.wyszukajElement(A[j]);
+
 		}
 		auto SLend = std::chrono::high_resolution_clock::now();
 		std::chrono::duration<double, milli> SLtime = SLend - SLstart;

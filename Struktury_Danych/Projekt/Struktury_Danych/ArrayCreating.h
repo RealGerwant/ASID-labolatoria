@@ -58,7 +58,7 @@ int largeRandomInt(int left_border, int right_border)
 }
 void makeListWithUniqueElements(int *A, int size)
 {
-	int right_border = size * 1;
+	int right_border = size * 100;
 	srand(time(NULL));
 	int* B;
 	B = new int[size];
