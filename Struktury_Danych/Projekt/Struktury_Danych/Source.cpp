@@ -21,22 +21,13 @@ int main()
 	SBB.open("czas_przeszukiwania_binarnego.txt");
 	CL.open("czas_tworzenia_listy_L.txt");
 	SL.open("czas_przeszukiwania_listy_L.txt");
-	ClS.open("czas_tworzenia_listy_lS.txt");
-	SlS.open("czas_przeszukiwania_listy_lS.txt");
 	CTR.open("czas_tworzenia_drzewa_TR.txt");
 	HTR.open("wysokoœæ_drzewa_TR.txt");
 	STR.open("czas_przeszukiwania_drzewa_TR.txt");
 	CTB.open("czas_tworzenia_drzewa_TB.txt");
 	HTB.open("wysokoœæ_drzewa_TB.txt");
-	STB.open("czas_przeszukiwania_drzewa_TBs.txt");
-	CTR.open("czas_tworzenia_drzewa_TRs.txt");
-	HTR.open("wysokoœæ_drzewa_TRs.txt");
-	STR.open("czas_przeszukiwania_drzewa_TRs.txt");
-	CTB.open("czas_tworzenia_drzewa_TBs.txt");
-	HTB.open("wysokoœæ_drzewa_TBs.txt");
-	STB.open("czas_przeszukiwania_drzewa_TBs.txt");
 
-	for (int i = 10000; i <= 200000; i+=10000)
+	for (int i = 10000; i <= 100000; i+=10000)
 	{
 		int* A;
 		int* B;
@@ -94,26 +85,6 @@ int main()
 		std::chrono::duration<double, milli> SLtime = SLend - SLstart;
 		SL << i << " " << SLtime.count() << " miliseconds" << std::endl;
 		std::cout << i << " SL done" << std::endl;
-		//tworzenie listyS
-		auto ClSstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			dodajElement(&lS,A[j]);
-		}
-		auto ClSend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> ClStime = ClSend - ClSstart;
-		ClS << i << " " << ClStime.count() << " miliseconds" << std::endl;
-		std::cout << i << " ClS done" << std::endl;
-		//przeszukiwanie listyS
-		auto SlSstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			czyJestElement(lS,A[j]);
-		}
-		auto SlSend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> SlStime = SlSend - SlSstart;
-		SlS << i << " " << SlStime.count() << " miliseconds" << std::endl;
-		std::cout << i << " SlS done" << std::endl;
 		//budowa TR
 		auto CTRstart = std::chrono::high_resolution_clock::now();
 		for (int j = 0; j < i; j++)
@@ -163,54 +134,6 @@ int main()
 		std::chrono::duration<double, milli> STBtime = STBend - STBstart;
 		STB << i << " " << STBtime.count() << " miliseconds" << std::endl;
 		std::cout << i << " STB done" << std::endl;
-		///////////////////////////////////////////////////////////////////////
-		//budowa TR
-		auto CTRsstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			dodajElement(&TRs,A[j]);
-		}
-		auto CTRsend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> CTRstime = CTRsend - CTRsstart;
-		CTRs << i << " " << CTRstime.count() << " miliseconds" << std::endl;
-		std::cout << i << " CTRs done" << std::endl;
-		//wysokoœæ TR
-		HTRs << i << " " << wysokoscDrzewa(&TRs) << " wysokoœæ" << std::endl;
-		std::cout << i << " HTR done" << std::endl;
-		//przeszukiwanie TR
-		auto STRsstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			czyJestElement(&TRs, A[j]);
-		}
-		auto STRsend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> STRstime = STRsend - STRsstart;
-		STRs << i << " " << STRstime.count() << " miliseconds" << std::endl;
-		std::cout << i << " STRs done" << endl;
-		//tworzenie TB
-		auto CTBsstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			dodajElement(&TBs, C[j]);
-		}
-		auto CTBsend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> CTBstime = CTBsend - CTBsstart;
-		CTBs << i << " " << CTBstime.count() << " miliseconds" << std::endl;
-		std::cout << i << " CBTs done" << std::endl;
-		//wysokoœæ drzewa TB
-		HTBs << i << " " << wysokoscDrzewa(&TBs) << " wysokoœæ" << std::endl;
-		std::cout << i << " HTBs done" << std::endl;
-		//przeszukiwanie TB
-		auto STBsstart = std::chrono::high_resolution_clock::now();
-		for (int j = 0; j < i; j++)
-		{
-			czyJestElement(&TBs, A[j]);
-		}
-		auto STBsend = std::chrono::high_resolution_clock::now();
-		std::chrono::duration<double, milli> STBstime = STBsend - STBsstart;
-		STBs << i << " " << STBstime.count() << " miliseconds" << std::endl;
-		std::cout << i << " STBs done" << std::endl;
-		std::cout << "##################################" << std::endl;
 	}
 	system("pause");
 }
