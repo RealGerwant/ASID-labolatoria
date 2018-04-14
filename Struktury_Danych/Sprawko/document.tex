@@ -1,0 +1,117 @@
+\documentclass[polish,polish,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{pslatex}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{anysize}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[polish]{babel}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+}
+
+\marginsize{2.5cm}{2.5cm}{2cm}{2cm}
+
+
+\begin{document}
+	
+\begin{spacing}{1.5}
+		\begin{titlepage}
+			\begin{flushright}
+				{ Wtorki 16:50\\
+					Grupa I3\\
+					Kierunek Informatyka\\
+					Wydział Informatyki\\
+					Politechnika Poznańska}
+			\end{flushright}
+		\vspace*{\fill}
+		\begin{center}
+			{\Large Algorytmy i struktury danych \\[0.1cm]
+				Sprawozdanie z zadania w zespołach nr. 2\\[0.1cm]
+				prowadząca: dr hab. inż. Małgorzata Sterna, prof PP}\\
+			{\Huge Wybrane złożone struktury danych\\ [0.4cm]}
+			{\large autorzy:\\[0.1cm]}
+			{\large Piotr Więtczak nr indeksu 132339\\[0.1cm] Tomasz Chudziak nr indeksu 136691}\\[0.5cm]
+			\today
+		\end{center}
+		\vspace*{\fill}
+	\end{titlepage}
+
+\section{Opis implementacji i czasy tworzenia wybranych struktur danych}
+
+\begin{figure}[H]
+	\subsubsection*{Wykres przedstawiający średni czas tworzenia struktury, w milisekundach, od rozmiaru zestawu danych}
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+	width=0.9\textwidth,
+	height = 0.9\textwidth,
+	title={Czasy tworzenia wybranych struktur danych},
+	xlabel={Liczba elementów},
+	ylabel={Czas tworzenia w misekundach},
+	scaled x ticks = false,
+	xtick distance = 10000,
+	x tick label style={/pgf/number format/fixed},
+	xticklabel style = {rotate= 90},
+	x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+	%%
+	scaled y ticks = false,
+	y tick label style={/pgf/number format/fixed},
+	ytick distance = 100000,
+	y label style={at={(axis description cs:-0.05,0.7)},anchor=east},
+	%%
+	legend pos=north west,
+	ymajorgrids=true,
+	grid style=dashed,
+	]
+	%%
+	\addplot[
+	color=black,
+	mark=square,
+	]
+	coordinates {
+		(10000,1.583)(20000,3.217)(30000,4.724)(40000,7.290)(50000,9.994)(60000,10.245)(70000,13.068)(80000,13.626)(90000,15.712)(100000,17.341)(110000,19.367)(120000,20.727)(130000,22.626)(140000,24.815)(150000,26.783)(160000,28.574)(170000,30.800)(180000,32.386)(190000,35.847)(200000,36.449)
+	};
+	%%
+		\addplot[
+	color=blue,
+	mark=triangle,
+	]
+	coordinates {
+		(10000,528.311)(20000,1726.300)(30000,3822.820)(40000,8920.560)(50000,13141.100)(60000,29238.700)(70000,40231.100)(80000,42175.700)(90000,55995.400)(100000,75918.200)(110000,108474.000)(120000,133603.000)(130000,176862.000)(140000,305785.000)(150000,315877.000)(160000,375689.000)(170000,442380.000)(180000,503635.000)(190000,561847.000)(200000,658997.000)
+	};
+	\legend{
+		$C_{B}$,
+		$C_{L}$
+	}
+	%%
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+		\subsubsection*{Tabela przedstawiająca średni czas tworzenia struktury w milisekundach}
+		\centering
+		\begin{equation*}
+		\begin{array}{|p|p|p|p|p|}
+		\hline
+
+		\end{array}
+		\end{equation*}
+\end{figure}
+	
+\end{spacing}
+	\newpage
+	\tableofcontents
+\end{document}
+
+
