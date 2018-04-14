@@ -1,0 +1,12 @@
+10000 14 wysokoœæ
+20000 15 wysokoœæ
+30000 15 wysokoœæ
+40000 16 wysokoœæ
+50000 16 wysokoœæ
+60000 16 wysokoœæ
+70000 17 wysokoœæ
+80000 17 wysokoœæ
+90000 17 wysokoœæ
+100000 17 wysokoœæ
+110000 17 wysokoœæ
+120000 17 wysokoœæ
