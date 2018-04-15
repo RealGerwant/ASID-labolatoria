@@ -26,6 +26,7 @@ int main()
 	STR.open("czas_przeszukiwania_drzewa_TR.txt");
 	CTB.open("czas_tworzenia_drzewa_TB.txt");
 	HTB.open("wysokoœæ_drzewa_TB.txt");
+	STB.open("czas_przeszukiwania_drzewa_TB.txt");
 
 	for (int i = 10000; i <= 2000000; i+=10000)
 	{
