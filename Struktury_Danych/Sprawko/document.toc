@@ -1,4 +1,6 @@
 \select@language {polish}
 \contentsline {section}{\numberline {1}Opis implementacji i czasy tworzenia wybranych struktur danych}{1}{section.1}
-\contentsline {section}{\numberline {2}Przeszukiwanie wybranych struktur danych}{2}{section.2}
-\contentsline {section}{\numberline {3}Wysoko\IeC {\'s}\IeC {\'c} drzewa}{3}{section.3}
+\contentsline {section}{\numberline {2}Przeszukiwanie wybranych struktur danych}{4}{section.2}
+\contentsline {section}{\numberline {3}Wysoko\IeC {\'s}\IeC {\'c} drzewa poszukiwa\IeC {\'n} binarnych}{6}{section.3}
+\contentsline {section}{\numberline {4}Wady i zalety wybranych struktur danych}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Tablice:}{8}{subsection.4.1}

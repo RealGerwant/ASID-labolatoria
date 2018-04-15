@@ -48,6 +48,15 @@
 
 \section{Opis implementacji i czasy tworzenia wybranych struktur danych}
 	\subsubsection*{Wykresy przedstawiające średni czas tworzenia struktury, w milisekundach, od rozmiaru zestawu danych}
+	
+Do implementacji wybranych struktur danych użyliśmy języka C++, a do pomiarów czasu klasy $ std::chrono::high\_resolution\_clock $  z biblioteki $<chrono>$.
+
+\subsubsection*{Lista jednokierunkowa}
+Lista jednokierunkowa opiera się na dwóch rodzajach struktur. Pierwsza z nich to głowa, w niej znajdują się wskaźniki pokazujące na pierwszy i ostatni element listy, sama w sobie nie przechowuje żadnego elementu. Drugi rodzaj to element składa się on przechowywanej wartości oraz ze wskaźnika lokalizującego następny element. Każda lista posiada jedną głowę i pewną ilość elementów odpowiadającą ilości liczb do zapamiętania.
+
+\subsection*{Drzewo poszukiwań binarnych}
+BST opiera się na jednej klasie. Podczas tworzenia tej struktury początkowo tworzy się tylko głowa to ona odpowiedzialna jest za wskazanie gdzie rozpoczyna się korzeń. By odróżnić ją od elementów przechowujących liczby do zapamiętania daliśmy jej wartość -1 (założyliśmy że ta konstrukcja będzie przechowywać tylko i wyłącznie liczby większe, równe 0). W klasie tej zaimplementowaliśmy konstruktor oraz trzy metody. Pierwsza przyłącza element do struktury. Podczas dodawania pierwszego elementu głowa zaczyna wskazywać na niego. Dodawanie kolejnych odbywa się tak samo jak dla zwykłego  BST z tą różnicą, że wpierw algorytm musi przejść przez głowę nie uwzględniając jej w dalszym szukaniu. Druga sprawdza wysokość drzewa, robi to w sposób rekurencyjny nie uwzględniając głowy. Trzecia odpowiedzialna jest za sprawdzanie czy element znajduje się w strukturze, polega ona na przeszukiwaniu tej struktury.
+
 %%WYKRES CZASU TWORZENIA
 \begin{figure}[H]
 	\centering
@@ -183,21 +192,42 @@ y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
 \end{figure}
 
 
-
+%%tabela czasów tworzenia
 \begin{figure}[H]
 		\subsubsection*{Tabela przedstawiająca średni czas tworzenia struktury w milisekundach}
 		\centering
 		\begin{equation*}
-		\begin{array}{|p|p|p|p|p|}
+		\begin{array}{|r|r|r|r|r|}
 		\hline
-
+		\multicolumn{1}{|c|}{$Liczba ele$}&\multicolumn{1}{c|}{C_{B}}&\multicolumn{1}{c|}{C_{L}}&\multicolumn{1}{c|}{C_{TR}}&\multicolumn{1}{c|}{C_{TB}}\\ \hline
+		10000&1.650&2.044&9.945&7.169\\
+		20000&5.843&4.073&22.923&14.959\\
+		30000&5.028&6.169&32.196&23.456\\
+		40000&6.641&8.355&46.658&32.567\\
+		50000&8.402&10.297&57.789&42.923\\
+		60000&10.921&12.575&76.041&49.510\\
+		70000&12.831&14.377&94.813&58.417\\
+		80000&14.280&16.281&102.981&67.797\\
+		90000&15.891&18.565&125.854&75.034\\
+		100000&17.556&20.329&130.962&84.913\\
+		110000&19.236&22.617&154.307&95.912\\
+		120000&21.554&25.787&170.075&105.213\\
+		130000&25.102&25.953&184.363&111.399\\
+		140000&24.829&28.711&202.444&120.719\\
+		150000&26.912&30.632&215.974&135.144\\
+		160000&28.519&32.516&245.861&138.828\\
+		170000&31.551&34.703&280.478&158.247\\
+		180000&33.262&38.168&264.447&160.696\\
+		190000&34.803&38.614&285.932&168.794\\
+		200000&37.533&40.629&303.575&180.382\\\hline		
 		\end{array}
 		\end{equation*}
 \end{figure}
 	
-	\section{Przeszukiwanie wybranych struktur danych}
-	
-\subsubsection*{Wykres przedstawiający średni czas przeszukiwania struktury, w milisekundach, od rozmiaru zestawu danych}
+
+\section{Przeszukiwanie wybranych struktur danych}	
+
+\subsubsection*{Wykresy przedstawiające średnie czasy przeszukiwania struktury, w milisekundach, od rozmiaru zestawu danych}
 %czasy przeszukiwania
 	\begin{figure}[H]
 
@@ -349,9 +379,41 @@ y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
 	\end{axis}
 	\end{tikzpicture}
 \end{figure}
+
+%%tabela czasów przeszukiwania	
+\begin{figure}[H]
+	\subsubsection*{Tabela przedstawiająca średni czas tworzenia struktury w milisekundach}
+	\centering
+	\begin{equation*}
+	\begin{array}{|r|r|r|r|r|r|}
+	\hline
+	\multicolumn{1}{|c|}{$Liczba ele$}&\multicolumn{1}{c|}{S_{SB}}&\multicolumn{1}{c|}{S_{BB}}&\multicolumn{1}{c|}{S_{L}}&\multicolumn{1}{c|}{S_{TR}}&\multicolumn{1}{c|}{S_{TB}}\\ \hline
+10000&116.347&4.534&354.608&6.778&5.125\\
+20000&434.923&11.445&1435.100&13.393&12.102\\
+30000&963.589&15.227&3150.970&20.482&16.104\\
+40000&1663.180&20.992&5964.640&30.896&26.580\\
+50000&2755.070&26.554&17094.000&40.196&31.822\\
+60000&3933.720&33.620&16052.900&53.579&38.924\\
+70000&5211.100&41.562&21362.700&58.858&48.745\\
+80000&6811.880&46.460&34108.400&69.323&53.877\\
+90000&8601.650&52.667&45225.500&80.632&67.380\\
+100000&10571.600&58.985&64175.800&93.133&71.823\\
+110000&12800.800&66.020&79715.500&102.264&79.161\\
+120000&15197.600&72.712&102809.000&113.286&91.825\\
+130000&17988.800&82.524&131624.000&128.353&103.391\\
+140000&20721.400&87.497&159801.000&142.335&115.199\\
+150000&23809.200&96.570&183256.000&159.782&127.070\\
+160000&27484.000&102.584&222896.000&173.954&126.894\\
+170000&30563.800&109.273&244782.000&207.902&157.062\\
+180000&34389.200&114.565&292448.000&187.756&147.043\\
+190000&38219.600&123.794&318782.000&206.874&157.062\\
+200000&42337.700&132.252&371754.000&220.576&168.860\\\hline
+	\end{array}
+	\end{equation*}
+\end{figure}
+
 	
-	
-	\section{Wysokość drzewa}
+	\section{Wysokość drzewa poszukiwań binarnych}
 %%WYKRES WYSOKOSCI DRZEW
 	\begin{figure}[H]
 		\subsubsection*{Wykres przedstawiający wysokości drzew od rozmiaru zestawu danych}
@@ -402,6 +464,60 @@ coordinates {
 		\end{tikzpicture}
 	\end{figure}
 	
+
+%tabela wysokosci
+\begin{figure}[H]
+	\subsubsection*{Tabela przedstawiająca wysokości drzew od liczby elementów}
+	\centering
+	\begin{equation*}
+	\begin{array}{|r|r|r|}
+	\hline
+	\multicolumn{1}{|c|}{$Liczba ele$}&\multicolumn{1}{c|}{H_{TR}}&\multicolumn{1}{c|}{H_{TB}}\\ \hline
+10000&29&14\\
+20000&38&15\\
+30000&34&15\\
+40000&36&16\\
+50000&37&16\\
+60000&38&16\\
+70000&37&17\\
+80000&38&17\\
+90000&44&17\\
+100000&39&17\\
+110000&40&17\\
+120000&45&17\\
+130000&41&17\\
+140000&41&18\\
+150000&43&18\\
+160000&48&18\\
+170000&42&18\\
+180000&42&18\\
+190000&43&18\\
+200000&48&18\\\hline
+	\end{array}
+	\end{equation*}
+\end{figure}
+
+
+Wysokość badanych drzew TR okazuje się być ponad dwukrotnie większa od drzew TB. Do drzewa TR wprowadzane są dane o losowych wartościach, przez co wysokość jest większa od wartości optymistycznej $O(\log{n})$. Natomiast do drzewa TB wprowadzane dane pochodzą z podziału połówkowego posortowanej tablicy, stworzone tak drzewo będzie dokładnie wyważone, a jego wysokość optymalna.
+Gdyby dane wprowadzano do BST według tablicy B, czyli posortowane rosnącą, drzewo przyjęło by postać jednej gałęzi o długości odpowiadającej liczbie wprowadzonych elementów, jego wysokość osiągnęła by wartość pesymistyczną $ O(n) $.
+
+Wysokość drzewa przeszukiwań binarnych ma bardzo duże znaczenie. To właśnie od niej zależy maksymalna ścieżka jaką musi przejść algorytm w poszukiwaniu elementów czy  podczas próby dodania nowego. Dla pesymistycznego przypadku wysokość drzewa będzie równa ilości elementów w do zapamiętania, struktura ta będzie zdegenerowana do listy. W konsekwencji zwiększy to koszt przeszukiwania do $ O(n) $. Dla przypadku średniego i optymistycznego koszt będzie wynosił $ O(\log_{n}) $. Oznacza to, że ta struktura działa najwydajniej gdy jest dobrze wyważona co w konsekwencji daje najmniejszą możliwość wysokość.
+
+\section{Wady i zalety wybranych struktur danych}
+\subsection{Tablice:}
+Wady:
+\begin{itemize}
+	\item długi czas przeszukiwania wycieńczającego
+	\item mała elastyczność (utrudniona możliwość dodania i usuwania elementów)
+\end{itemize}
+Zalety:
+\begin{itemize}
+	\item dostęp do elementu po numerze indeksu
+	\item łatwa implementacja (standardowa implementacja w większości języków programowania, z której można skorzystać)
+	\item 
+\end{itemize}
+
+
 \end{spacing}
 	\newpage
 	\tableofcontents
