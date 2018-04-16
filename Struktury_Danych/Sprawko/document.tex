@@ -50,14 +50,11 @@
 	
 Do implementacji wybranych struktur danych użyliśmy języka C++, a do pomiarów czasu klasy $ std::chrono::high\_resolution\_clock $  z biblioteki $<chrono>$.Wszystkie pomiary rozmiarów wykonano funkcją sizeof().
 
-\subsection*{Proces generowania tablicy o unikalnych elementach}
-
-Każdy element tablicy był losowany przy pomocy funkcji rand() z przedziału $ [0;100n]$, po wylosowaniu sprawdzano czy wylosowany element znajduje się już w tablicy pomocniczej przy pomocy wyszukiwania połówkowego, która zawierała te same elementy co tablica podstawowa, ale posortowane rosnąco. W przypadku kiedy wylosowany element znajdował się już w tablicy pomocniczej był losowany ponownie, jeżeli był to unikalny element zostawał dodany na koniec do tablicy podstawowej i pomocniczej, a następnie przesunięty na właściwe miejsce w tablicy pomocniczej. Cały proces był powtarzany aż tablica podstawowa osiągnęła pożądaną długość.
 
 \subsection*{Tablica}
 
 Tablica rozmiar pojedynczego elementu:
-4 B
+4 B.
 
 \subsection*{Lista jednokierunkowa}
 
@@ -66,147 +63,153 @@ Rozmiar głowy w liście jednokierunkowej:
 16 B.
 Rozmiar elementu w liście jednokierunkowej:
 16 B
+Na jeden element składa się pole wartości przechowujące liczbę naturalną, oraz wskaźnik na następny element w liście.
+
 
 \subsection*{Drzewo poszukiwań binarnych}
-BST opiera się na jednej klasie. Podczas tworzenia tej struktury początkowo tworzy się tylko głowa to ona odpowiedzialna jest za wskazanie gdzie rozpoczyna się korzeń. By odróżnić ją od elementów przechowujących liczby do zapamiętania daliśmy jej wartość -1 (założyliśmy że ta konstrukcja będzie przechowywać tylko i wyłącznie liczby większe, równe 0). W klasie tej zaimplementowaliśmy konstruktor oraz trzy metody. Pierwsza przyłącza element do struktury. Podczas dodawania pierwszego elementu głowa zaczyna wskazywać na niego. Dodawanie kolejnych odbywa się tak samo jak dla zwykłego  BST z tą różnicą, że wpierw algorytm musi przejść przez głowę nie uwzględniając jej w dalszym szukaniu. Druga sprawdza wysokość drzewa, robi to w sposób rekurencyjny nie uwzględniając głowy. Trzecia odpowiedzialna jest za sprawdzanie czy element znajduje się w strukturze, polega ona na przeszukiwaniu tej struktury.
+BST zbudowana jest w jednej klasie. Podczas tworzenia tej struktury początkowo tworzy się tylko głowa to ona odpowiedzialna jest za wskazanie gdzie rozpoczyna się korzeń. By odróżnić ją od elementów przechowujących liczby do zapamiętania daliśmy jej wartość -1 (założyliśmy że ta konstrukcja będzie przechowywać tylko i wyłącznie liczby większe, równe 0). W klasie tej zaimplementowaliśmy konstruktor oraz trzy metody. Pierwsza przyłącza element do struktury. Podczas dodawania pierwszego elementu głowa zaczyna wskazywać na niego. Dodawanie kolejnych odbywa się tak samo jak dla zwykłego  BST z tą różnicą, że wpierw algorytm musi przejść przez głowę nie uwzględniając jej w dalszym szukaniu. Druga sprawdza wysokość drzewa, robi to w sposób rekurencyjny nie uwzględniając głowy. Trzecia odpowiedzialna jest za sprawdzanie czy element znajduje się w strukturze, polega ona na przeszukiwaniu tej struktury.
 Rozmiar elementu w drzewie przeszukiwań binarnych:
-32 B.
+32 B. Na jeden element składa się pole wartości przechowujące liczbę naturalną, wskaźnik na lewego syna elementu i wskaźnik na prawego syna elementu.
 
 
 	\subsubsection*{Wykresy przedstawiające średni czas tworzenia struktury, w milisekundach, od rozmiaru zestawu danych}
-
-%%WYKRES CZASU TWORZENIA
+%Wykreshy
 \begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-	\begin{axis}[
-	width=0.9\textwidth,
-	height = 0.5\textwidth,
-	title={Czasy tworzenia wybranych struktur danych},
-	xlabel={Liczba elementów},
-	ylabel={Czas tworzenia w misekundach},
-	%
-	scaled x ticks = false,
-	xtick distance = 10000,
-	x tick label style={/pgf/number format/fixed},
-	xticklabel style = {rotate= 90},
+	%%WYKRES CZASU TWORZENIA
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.9\textwidth,
+		height = 0.5\textwidth,
+		title={Czasy tworzenia wybranych struktur danych},
+		xlabel={Liczba elementów},
+		ylabel={Czas tworzenia w misekundach},
+		%
+		scaled x ticks = false,
+		xtick distance = 10000,
+		x tick label style={/pgf/number format/fixed},
+		xticklabel style = {rotate= 90},
 		x label style={at={(axis description cs:0.5,-0.15)},anchor=north},
-	%%
-	ytick distance = 25,
-	scaled y ticks = false,
-	y tick label style={/pgf/number format/fixed},
-	y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
-	%%
-	legend pos=north west,
-	ymajorgrids=true,
-	grid style=dashed,
-	]
-	%%
-\addplot[
-	color=black,
-	mark=*,
-	]
-	coordinates {
-(10000,1.650)(20000,5.843)(30000,5.028)(40000,6.641)(50000,8.402)(60000,10.921)(70000,12.831)(80000,14.280)(90000,15.891)(100000,17.556)(110000,19.236)(120000,21.554)(130000,25.102)(140000,24.829)(150000,26.912)(160000,28.519)(170000,31.551)(180000,33.262)(190000,34.803)(200000,37.533)
-	};
-	%%
-\addplot[
-	color=blue,
-	mark=triangle,
-	]
-	coordinates {
-(10000,2.044)(20000,4.073)(30000,6.169)(40000,8.355)(50000,10.297)(60000,12.575)(70000,14.377)(80000,16.281)(90000,18.565)(100000,20.329)(110000,22.617)(120000,25.787)(130000,25.953)(140000,28.711)(150000,30.632)(160000,32.516)(170000,34.703)(180000,38.168)(190000,38.614)(200000,40.629)
-	};
-\addplot[
-	color=red,
-	mark=diamond,
-	]
-	coordinates {
-(10000,9.945)(20000,22.923)(30000,32.196)(40000,46.658)(50000,57.789)(60000,76.041)(70000,94.813)(80000,102.981)(90000,125.854)(100000,130.962)(110000,154.307)(120000,170.075)(130000,184.363)(140000,202.444)(150000,215.974)(160000,245.860)(170000,280.478)(180000,264.447)(190000,285.930)(200000,303.575)
-	};
-\addplot[
-	color=green,
-	mark=square,
-	]
-	coordinates {
-(10000,7.169)(20000,14.959)(30000,23.456)(40000,32.567)(50000,42.923)(60000,49.510)(70000,58.417)(80000,67.797)(90000,75.034)(100000,84.913)(110000,95.912)(120000,105.213)(130000,111.399)(140000,120.719)(150000,135.144)(160000,138.828)(170000,158.247)(180000,160.696)(190000,168.794)(200000,180.382)
-	};
-	\legend{
-		$C_{B}$,
-		$C_{L}$,
-		$C_{TR}$,
-		$C_{TB}$,
-	}
-	%%
-	\end{axis}
-	\end{tikzpicture}
-\end{figure}
-
-%%WYKRES CZASU TWORZENIA skala logarytmiczna
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-	\begin{axis}[
-	width=0.9\textwidth,
-	height = 0.5\textwidth,
-	title={Czasy tworzenia wybranych struktur danych, skala logarytmiczna},
-	xlabel={Liczba elementów},
-	ylabel={Czas tworzenia w misekundach},
-	%
-	scaled x ticks = false,
-	xtick distance = 10000,
-	x tick label style={/pgf/number format/fixed},
-	xticklabel style = {rotate= 90},
-	x label style={at={(axis description cs:0.5,-0.15)},anchor=north},
-	%%
-	ymode = log,
-	scaled y ticks = false,
-	y tick label style={/pgf/number format/fixed},
-y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
-	%%
-	legend pos=north west,
-	ymajorgrids=true,
-	grid style=dashed,
-	]
-	%%
-	\addplot[
-	color=black,
-	mark=*,
-	]
-	coordinates {
-		(10000,1.650)(20000,5.843)(30000,5.028)(40000,6.641)(50000,8.402)(60000,10.921)(70000,12.831)(80000,14.280)(90000,15.891)(100000,17.556)(110000,19.236)(120000,21.554)(130000,25.102)(140000,24.829)(150000,26.912)(160000,28.519)(170000,31.551)(180000,33.262)(190000,34.803)(200000,37.533)
-	};
-	%%
-	\addplot[
-	color=blue,
-	mark=triangle,
-	]
-	coordinates {
-		(10000,2.044)(20000,4.073)(30000,6.169)(40000,8.355)(50000,10.297)(60000,12.575)(70000,14.377)(80000,16.281)(90000,18.565)(100000,20.329)(110000,22.617)(120000,25.787)(130000,25.953)(140000,28.711)(150000,30.632)(160000,32.516)(170000,34.703)(180000,38.168)(190000,38.614)(200000,40.629)
-	};
-	\addplot[
-	color=red,
-	mark=diamond,
-	]
-	coordinates {
-		(10000,9.945)(20000,22.923)(30000,32.196)(40000,46.658)(50000,57.789)(60000,76.041)(70000,94.813)(80000,102.981)(90000,125.854)(100000,130.962)(110000,154.307)(120000,170.075)(130000,184.363)(140000,202.444)(150000,215.974)(160000,245.860)(170000,280.478)(180000,264.447)(190000,285.930)(200000,303.575)
-	};
-	\addplot[
-	color=green,
-	mark=square,
-	]
-	coordinates {
-		(10000,7.169)(20000,14.959)(30000,23.456)(40000,32.567)(50000,42.923)(60000,49.510)(70000,58.417)(80000,67.797)(90000,75.034)(100000,84.913)(110000,95.912)(120000,105.213)(130000,111.399)(140000,120.719)(150000,135.144)(160000,138.828)(170000,158.247)(180000,160.696)(190000,168.794)(200000,180.382)
-	};
-	\legend{
-		$C_{B}$,
-		$C_{L}$,
-		$C_{TR}$,
-		$C_{TB}$,
-	}
-	%%
-	\end{axis}
-	\end{tikzpicture}
+		%%
+		ytick distance = 25,
+		scaled y ticks = false,
+		y tick label style={/pgf/number format/fixed},
+		y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
+		%%
+		legend pos=north west,
+		ymajorgrids=true,
+		grid style=dashed,
+		]
+		%%
+		\addplot[
+		color=black,
+		mark=*,
+		]
+		coordinates {
+			(10000,1.650)(20000,5.843)(30000,5.028)(40000,6.641)(50000,8.402)(60000,10.921)(70000,12.831)(80000,14.280)(90000,15.891)(100000,17.556)(110000,19.236)(120000,21.554)(130000,25.102)(140000,24.829)(150000,26.912)(160000,28.519)(170000,31.551)(180000,33.262)(190000,34.803)(200000,37.533)
+		};
+		%%
+		\addplot[
+		color=blue,
+		mark=triangle,
+		]
+		coordinates {
+			(10000,2.044)(20000,4.073)(30000,6.169)(40000,8.355)(50000,10.297)(60000,12.575)(70000,14.377)(80000,16.281)(90000,18.565)(100000,20.329)(110000,22.617)(120000,25.787)(130000,25.953)(140000,28.711)(150000,30.632)(160000,32.516)(170000,34.703)(180000,38.168)(190000,38.614)(200000,40.629)
+		};
+		\addplot[
+		color=red,
+		mark=diamond,
+		]
+		coordinates {
+			(10000,9.945)(20000,22.923)(30000,32.196)(40000,46.658)(50000,57.789)(60000,76.041)(70000,94.813)(80000,102.981)(90000,125.854)(100000,130.962)(110000,154.307)(120000,170.075)(130000,184.363)(140000,202.444)(150000,215.974)(160000,245.860)(170000,280.478)(180000,264.447)(190000,285.930)(200000,303.575)
+		};
+		\addplot[
+		color=green,
+		mark=square,
+		]
+		coordinates {
+			(10000,7.169)(20000,14.959)(30000,23.456)(40000,32.567)(50000,42.923)(60000,49.510)(70000,58.417)(80000,67.797)(90000,75.034)(100000,84.913)(110000,95.912)(120000,105.213)(130000,111.399)(140000,120.719)(150000,135.144)(160000,138.828)(170000,158.247)(180000,160.696)(190000,168.794)(200000,180.382)
+		};
+		\legend{
+			$C_{B}$,
+			$C_{L}$,
+			$C_{TR}$,
+			$C_{TB}$,
+		}
+		%%
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	%%WYKRES CZASU TWORZENIA skala logarytmiczna
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.9\textwidth,
+		height = 0.5\textwidth,
+		title={Czasy tworzenia wybranych struktur danych, skala logarytmiczna},
+		xlabel={Liczba elementów},
+		ylabel={Czas tworzenia w misekundach},
+		%
+		scaled x ticks = false,
+		xtick distance = 10000,
+		x tick label style={/pgf/number format/fixed},
+		xticklabel style = {rotate= 90},
+		x label style={at={(axis description cs:0.5,-0.15)},anchor=north},
+		%%
+		ymode = log,
+		scaled y ticks = false,
+		y tick label style={/pgf/number format/fixed},
+		y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
+		%%
+		legend pos=north west,
+		ymajorgrids=true,
+		grid style=dashed,
+		]
+		%%
+		\addplot[
+		color=black,
+		mark=*,
+		]
+		coordinates {
+			(10000,1.650)(20000,5.843)(30000,5.028)(40000,6.641)(50000,8.402)(60000,10.921)(70000,12.831)(80000,14.280)(90000,15.891)(100000,17.556)(110000,19.236)(120000,21.554)(130000,25.102)(140000,24.829)(150000,26.912)(160000,28.519)(170000,31.551)(180000,33.262)(190000,34.803)(200000,37.533)
+		};
+		%%
+		\addplot[
+		color=blue,
+		mark=triangle,
+		]
+		coordinates {
+			(10000,2.044)(20000,4.073)(30000,6.169)(40000,8.355)(50000,10.297)(60000,12.575)(70000,14.377)(80000,16.281)(90000,18.565)(100000,20.329)(110000,22.617)(120000,25.787)(130000,25.953)(140000,28.711)(150000,30.632)(160000,32.516)(170000,34.703)(180000,38.168)(190000,38.614)(200000,40.629)
+		};
+		\addplot[
+		color=red,
+		mark=diamond,
+		]
+		coordinates {
+			(10000,9.945)(20000,22.923)(30000,32.196)(40000,46.658)(50000,57.789)(60000,76.041)(70000,94.813)(80000,102.981)(90000,125.854)(100000,130.962)(110000,154.307)(120000,170.075)(130000,184.363)(140000,202.444)(150000,215.974)(160000,245.860)(170000,280.478)(180000,264.447)(190000,285.930)(200000,303.575)
+		};
+		\addplot[
+		color=green,
+		mark=square,
+		]
+		coordinates {
+			(10000,7.169)(20000,14.959)(30000,23.456)(40000,32.567)(50000,42.923)(60000,49.510)(70000,58.417)(80000,67.797)(90000,75.034)(100000,84.913)(110000,95.912)(120000,105.213)(130000,111.399)(140000,120.719)(150000,135.144)(160000,138.828)(170000,158.247)(180000,160.696)(190000,168.794)(200000,180.382)
+		};
+		\legend{
+			$C_{B}$,
+			$C_{L}$,
+			$C_{TR}$,
+			$C_{TB}$,
+		}
+		%%
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	
 \end{figure}
 
 \begin{spacing}{1,5}
@@ -245,7 +248,7 @@ y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
 
 \section{Przeszukiwanie wybranych struktur danych}	
 
-\subsection*{Wykresy przedstawiające średnie czasy wszystkich elementów struktury, w milisekundach, od rozmiaru zestawu danych}
+\subsection*{Wykresy przedstawiające średnie czasy wyszukiwania wszystkich elementów struktury, w milisekundach, od rozmiaru zestawu danych}
 %czasy przeszukiwania
 	\begin{figure}[H]
 
@@ -432,10 +435,9 @@ y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
 \end{figure}
 \end{spacing}
 	
-Wyszukiwanie elementów w tablicy metodą wyczerpującą dla wszystkich elementów nie różni się złożonością, która wynosi $O(n^2)$,  od wyszukiwania w liście jednokierunkowej. Działają one na podobnej zasadzie, dla każdego wyszukania, sprawdzane są wszystkie elementy od początkowego, aż do szukanego. Mimo to przeszukiwanie listy okazało się wolniejsze, a wraz ze wzrostem liczby elementów różnica pogłębia się. Dla 10000 elementów wyniki dla tablicy są ponad dwa razy gorsze, dla 100000 sześć i pół razy, a dla 200000 prawie 9 razy. Powodem tego może być to że lista odwołuje się do elementów po adresie w pamięci, a nie jak w przypadku tablicy po numerze indeksu.
-Przeszukiwanie  tablicy za pomocą wyszukiwania binarnego było znacznie szybsze od wyszukiwania w liście, na początku radziło sobie około 80 razy lepiej, a pod koniec aż blisko 2800 razy.
+Wyszukiwanie elementów w tablicy metodą wyczerpującą dla wszystkich elementów nie różni się złożonością, która wynosi $O(n^2)$,  od wyszukiwania w liście jednokierunkowej. Działają one na podobnej zasadzie, dla każdego wyszukania, sprawdzane są wszystkie elementy od początkowego, aż do szukanego. Mimo to przeszukiwanie listy okazało się wolniejsze, a wraz ze wzrostem liczby elementów różnica pogłębia się.  Powodem tego może być to że lista odwołuje się do elementów po adresie w pamięci, a nie jak w przypadku tablicy po numerze indeksu.
 
-Czasy otrzymane dla przeszukiwania binarnego tablicy B i drzewa TB, osiągały podobne wartości, jednak we wszystkich przypadkach wyszukiwanie w tablicy poradziło sobie lepiej, zapewne z tego samego powodu co w przypadku listy poruszanie się po strukturze za pomocą adresów poszczególnych elementów jest mniej wydajne od używania ich indeksów. W obu przypadkach przebieg wyszukiwania wszystkich elementów wygląda podobnie, za każdym razem sprawdzane jest czy poszukiwany element jest równy aktualnie wybranemu, w przeciwny razie dzięki uporządkowaniu struktur wyszukiwanie jest kontynuowane tyko dla mniejszych/większych od wybranego, co pozwala na zmniejszenie mocy zbioru w którym poszukujemy o połowę. Złożoność takiego wyszukiwania dla wszystkich elementów wynosi $O(n\log_{n})$.
+Czasy otrzymane dla przeszukiwania binarnego tablicy B i drzewa TB, osiągały podobne wartości, jednak we wszystkich przypadkach wyszukiwanie w tablicy poradziło sobie lepiej, zapewne z tego samego powodu co w przypadku listy poruszanie się po strukturze za pomocą adresów poszczególnych elementów jest mniej wydajne od używania ich indeksów. W obu przypadkach przebieg wyszukiwania wszystkich elementów wygląda podobnie, za każdym razem sprawdzane jest czy poszukiwany element jest równy aktualnie wybranemu, w przeciwny razie, wykorzystując uporządkowanie struktur, wyszukiwanie jest kontynuowane tyko dla połowy danych zawierającej elementy mniejsze/większe od niego. Co powoduje że po każdym porównaniu odrzucana jest połowa elementów. Złożoność takiego wyszukiwania dla wszystkich elementów wynosi $O(n\log_{n})$.
 
 	\section{Wysokość drzewa poszukiwań binarnych}
 %%WYKRES WYSOKOSCI DRZEW
@@ -487,36 +489,21 @@ coordinates {
 		\end{axis}
 		\end{tikzpicture}
 	\end{figure}
-\subsection*{Tabela przedstawiająca wysokości drzew od liczby elementów}
+\subsection*{Tabela przedstawiająca średnie wysokości drzew od liczby elementów}
 \begin{spacing}{1,5}
 %tabela wysokosci
 \begin{figure}[H]
 
 	\centering
 	\begin{equation*}
-	\begin{array}{|r|r|r|}
+	\begin{array}{|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
 	\hline
-	\multicolumn{1}{|c|}{$Liczba ele.$}&\multicolumn{1}{c|}{H_{TR}}&\multicolumn{1}{c|}{H_{TB}}\\ \hline
-10000&29&14\\
-20000&38&15\\
-30000&34&15\\
-40000&36&16\\
-50000&37&16\\
-60000&38&16\\
-70000&37&17\\
-80000&38&17\\
-90000&44&17\\
-100000&39&17\\
-110000&40&17\\
-120000&45&17\\
-130000&41&17\\
-140000&41&18\\
-150000&43&18\\
-160000&48&18\\
-170000&42&18\\
-180000&42&18\\
-190000&43&18\\
-200000&48&18\\\hline
+\rotatebox[origin=r]{90}{$ \enskip Liczba\enskip ele.$}&\rotatebox[origin=r]{90}{10000}&\rotatebox[origin=r]{90}{20000}&\rotatebox[origin=r]{90}{30000}&\rotatebox[origin=r]{90}{40000}&\rotatebox[origin=r]{90}{50000}&\rotatebox[origin=r]{90}{60000}&\rotatebox[origin=r]{90}{70000}&\rotatebox[origin=r]{90}{80000}&\rotatebox[origin=r]{90}{90000}&\rotatebox[origin=r]{90}{100000}&\rotatebox[origin=r]{90}{110000}&\rotatebox[origin=r]{90}{120000}&\rotatebox[origin=r]{90}{130000}&\rotatebox[origin=r]{90}{140000}&\rotatebox[origin=r]{90}{150000}&\rotatebox[origin=r]{90}{160000}&\rotatebox[origin=r]{90}{170000}&\rotatebox[origin=r]{90}{180000}&\rotatebox[origin=r]{90}{190000}&\rotatebox[origin=r]{90}{200000}\\\hline
+H_{TR}&29&38&34&36&37&38&37&38&44&39&40&45&41&41&43&48&42&42&43&48\\\hline
+H_{TB}&14&15&15&16&16&16&17&17&17&17&17&17&17&18&18&18&18&18&18&18\\\hline
+
+
+
 	\end{array}
 	\end{equation*}
 \end{figure}
