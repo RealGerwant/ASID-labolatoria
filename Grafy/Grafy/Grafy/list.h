@@ -5,12 +5,14 @@ struct element
 {
 	int value;
 	element * next = 0;
+	element();
 };
 
 class list
 {
 private:
-	element * first = 0;
+	element * first;
+	element * last;
 public:
 	void AddElement(int val);
 	void PrintAllElements();

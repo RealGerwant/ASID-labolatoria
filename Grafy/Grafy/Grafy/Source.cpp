@@ -5,10 +5,10 @@
 int main() {
 	list L;
 	L.AddElement(2);
+	L.AddElement(40);
 	L.AddElement(3);
-	L.AddElement(1);
 	L.PrintAllElements();
-	Sleep(3000);
+	Sleep(10000);
 	
 
 }
