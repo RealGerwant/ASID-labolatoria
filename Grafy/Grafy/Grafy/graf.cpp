@@ -4,6 +4,7 @@
 #include <ctime>
 #include <iostream>
 #include "LIFO.h"
+#include <math.h>
 
 graf::graf(int s, float d)
 {
@@ -19,6 +20,7 @@ graf::~graf()
 }
 
 void graf::PrintLabelsArray() {
+	std::cout << "################" << std::endl;
 	for (int i = 0; i < size; ++i) {
 		std::cout << Labes[i][0] << " " << Labes[i][1] << std::endl;
 	}
@@ -27,9 +29,18 @@ void graf::PrintLabelsArray() {
 void graf::DFSsort() {
 	int * holder = new int;
 	*holder = 0;
-	int * count = new int;
-	*count = 0;
-	Sort( holder, count);
+	for (int i = 0; i < size; i++)
+	{
+		if (Labes[i][0] == -1) {
+			if (!Sort(holder,i)){
+				std::cout << "CCCCcYYYYYKKKKLLLEEEE" << std::endl;
+				break;
+			}
+		}
+	}
+	for (int i = 0; i < size; ++i) {
+		Sorted[i] = stosik.PULL();
+	}
 }
 
 void graf::PrintTopologyOrder() {
@@ -40,24 +51,28 @@ void graf::PrintTopologyOrder() {
 	}
 }
 
-void graf::Sort( int * hel, int* c) {
+bool graf::Sort( int * hel,int i) {
 	element * tmp = new element;
-	for (int i = 0; i < size; ++i) {
-		if (Labes[i][0] == -1)	{
-			Labes[i][0] = (*hel)++;
-			tmp =ListOfSucessor[i].first;
-			while (tmp != 0){
-				if (Labes[tmp->value][0] == -1) {
-					Sort( hel, c);
-				}
-				tmp = tmp->next;
-			}
-			Labes[i][1] = (*hel)++;
-			Sorted[(*c)++] = i;
+		if (Labes[i][0] > -1 && Labes[i][1] == -1) {
+			return false;
 		}
-	}
-	
+		if (Labes[i][0] > -1 && Labes[i][1] > -1) {
+			return true;
+		}
+		Labes[i][0] = (*hel)++;
+		tmp = ListOfSucessor[i].first;
+		while (tmp){
+			if (!Sort(hel,tmp->value)){
+				return false;
+			}
+			tmp = tmp->next;
+		}
+		Labes[i][1] = (*hel)++;
+		stosik.PUSH(i);
+		return true;
 }
+	
+
 
 void graf::FillListOfArchesFromMatrix() {
 	for (int i = 0; i < size; ++i) {
@@ -124,7 +139,7 @@ void graf::CheckAdjacencyMatrixDensity()
 		}
 
 	}
-	float density = (2.0f * m) / (size * (size - 1));
+	float density = (2.0f * m) / (size * (size + 1));
 	std::cout <<"Graph density: "<< density << std::endl;
 }
 
@@ -147,10 +162,10 @@ void graf::RandGraphInMatrix(float density)
 			AdjacencyMatrix[j][i] = 0;
 		}
 	
-	int m = (int)((density * size * (size - 1)) *0.5f);
+	int m = (int)(density * size * (size + 1) *0.5f);
 
 	int i, j;
-	while (!m == 0) {
+	while (m > 0) {
 		i = rand() % (size);
 		j = rand() % (size);
 		if ((i != j) && (AdjacencyMatrix[j][i] == 0)) {

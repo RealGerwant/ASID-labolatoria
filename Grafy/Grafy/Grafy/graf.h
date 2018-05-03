@@ -11,6 +11,7 @@ public:
 	ListOfArches ListOfArches;
 	int ** Labes;
 	int * Sorted;
+	LIFO stosik;
 private:
 	void SetSize(int size);
 	void RandGraphInMatrix(	float density);
@@ -23,7 +24,7 @@ public:
 	void PrintAdjacenceyMatrix();
 	void PrintListOfSucessor();
 	void CheckAdjacencyMatrixDensity();
-	void Sort(int * hel , int* c);
+	bool Sort(int * hel , int i);
 	void DFSsort();
 	void PrintLabelsArray();
 	void PrintTopologyOrder();

@@ -5,7 +5,7 @@
 #include <iostream>
 
 int main() {
-	graf G(10, 0.6f);
+	graf G(4, 0.4f);
 	G.PrintAdjacenceyMatrix();
 	G.CheckAdjacencyMatrixDensity();
 	G.PrintListOfSucessor();
@@ -13,10 +13,7 @@ int main() {
 	G.DFSsort();
 	G.PrintLabelsArray();
 	G.PrintTopologyOrder();
-
-
-
-
+	
 	system("pause");
 	
 
