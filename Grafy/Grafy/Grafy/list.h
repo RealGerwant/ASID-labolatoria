@@ -1,5 +1,28 @@
 #pragma once
 
+//Arches
+
+struct arch
+{
+	int start;
+	int end;
+	arch * next = 0;
+	arch();
+};
+
+class ListOfArches
+{
+private:
+
+public:
+	arch * first;
+	void AddElement(int s, int e);
+	void PrintAllElements();
+	ListOfArches();
+	~ListOfArches();
+};
+
+//Sucessors
 
 struct element
 {
@@ -8,15 +31,15 @@ struct element
 	element();
 };
 
-class list
+class ListOfSucssesor
 {
 private:
-	element * first;
-	element * last;
+
 public:
+	element * first;
 	void AddElement(int val);
 	void PrintAllElements();
-	list();
-	~list();
+	ListOfSucssesor();
+	~ListOfSucssesor();
 };
 
