@@ -19,6 +19,21 @@ graf::~graf()
 {
 }
 
+int graf::CountReturnArchForListOfArches() {
+	int count = 0;
+	arch * tmp = new arch;
+	tmp = ListOfArches.first;
+
+	while (tmp)
+	{
+		if (Labes[tmp->end][0] < Labes[tmp->start][0] && Labes[tmp->start][0] < Labes[tmp->start][1] && Labes[tmp->start][1] < Labes[tmp->end][1]) {
+			count++;
+		}
+		tmp = tmp->next;
+	}
+	return count;
+}
+
 void graf::PrintLabelsArray() {
 	std::cout << "################" << std::endl;
 	for (int i = 0; i < size; ++i) {
@@ -32,10 +47,7 @@ void graf::DFSsort() {
 	for (int i = 0; i < size; i++)
 	{
 		if (Labes[i][0] == -1) {
-			if (!Sort(holder,i)){
-				std::cout << "CCCCcYYYYYKKKKLLLEEEE" << std::endl;
-				break;
-			}
+			Sort(holder, i);
 		}
 	}
 	for (int i = 0; i < size; ++i) {
@@ -54,7 +66,7 @@ void graf::PrintTopologyOrder() {
 bool graf::Sort( int * hel,int i) {
 	element * tmp = new element;
 		if (Labes[i][0] > -1 && Labes[i][1] == -1) {
-			return false;
+			return true;
 		}
 		if (Labes[i][0] > -1 && Labes[i][1] > -1) {
 			return true;
@@ -99,6 +111,36 @@ void graf::PrintListOfArches() {
 	ListOfArches.PrintAllElements();
 }
 
+int graf::CountReturnArchForListOfsucessors() {
+	int count = 0;
+	element * tmp = new element;
+	for (int i = 0; i < size; i++){
+		tmp = ListOfSucessor[i].first;
+		while (tmp){
+			if (Labes[tmp->value][0] < Labes[i][0] && Labes[i][0]< Labes[i][1] && Labes[i][1] < Labes[tmp->value][1]){
+				count++;
+			}
+			tmp = tmp->next;
+		}
+
+	}
+	return count;
+}
+
+int graf::CountReturnArchForAdjacencyMatrix() {
+	int count = 0;
+	for (int i = 0; i < size; ++i) {
+		for (int j = 0; j < size; ++j) {
+			if (AdjacencyMatrix[i][j] == 1) {
+				if (Labes[i][0] < Labes[j][0] && Labes[j][0] < Labes[j][1] && Labes[j][1] < Labes[i][1]) {
+					count++;
+				}
+			}
+		}
+	}
+	return count;
+}
+
 void graf::PrintListOfSucessor() {
 	for (int i = 0; i < size; i++)
 	{
@@ -139,7 +181,7 @@ void graf::CheckAdjacencyMatrixDensity()
 		}
 
 	}
-	float density = (2.0f * m) / (size * (size + 1));
+	float density = (1.0f * m) / (size * (size + 1));
 	std::cout <<"Graph density: "<< density << std::endl;
 }
 
@@ -162,7 +204,7 @@ void graf::RandGraphInMatrix(float density)
 			AdjacencyMatrix[j][i] = 0;
 		}
 	
-	int m = (int)(density * size * (size + 1) *0.5f);
+	int m = (int)(density * size * (size + 1) *1.0f);
 
 	int i, j;
 	while (m > 0) {

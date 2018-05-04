@@ -28,5 +28,8 @@ public:
 	void DFSsort();
 	void PrintLabelsArray();
 	void PrintTopologyOrder();
+	int CountReturnArchForListOfArches();
+	int CountReturnArchForAdjacencyMatrix();
+	int CountReturnArchForListOfsucessors();
 };
 
