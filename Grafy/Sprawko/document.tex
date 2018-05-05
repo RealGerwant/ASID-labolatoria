@@ -1,0 +1,108 @@
+\documentclass[polish,polish,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepackage{pslatex}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{anysize}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[polish]{babel}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+}
+
+\marginsize{2.5cm}{2.5cm}{2cm}{2cm}
+
+
+\begin{document}
+	
+		\begin{titlepage}
+			\begin{flushright}
+				{ Wtorki 16:50\\
+					Grupa I3\\
+					Kierunek Informatyka\\
+					Wydział Informatyki\\
+					Politechnika Poznańska}
+			\end{flushright}
+		\vspace*{\fill}
+		\begin{center}
+			{\Large Algorytmy i struktury danych \\[0.1cm]
+				Sprawozdanie z zadania w zespołach nr. 2\\[0.1cm]
+				prowadząca: dr hab. inż. Małgorzata Sterna, prof PP}\\
+			{\Huge Algorytmy  Grafowe\\ [0.4cm]}
+			{\large autorzy:\\[0.1cm]}
+			{\large Piotr Więtczak nr indeksu 132339\\[0.1cm] Tomasz Chudziak nr indeksu 136691}\\[0.5cm]
+			\today
+		\end{center}
+		\vspace*{\fill}
+	\end{titlepage}
+
+\section{Opis implementacji }
+
+\section{Obliczanie etykiet}
+	%%WYKRES CZASU TWORZENIA
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		width=0.9\textwidth,
+		height = 0.5\textwidth,
+		title={Czasy obliczania etykiet dla grafów},
+		xlabel={Liczba wierzchołków},
+		ylabel={Czas obliczania w misekundach},
+		%
+		scaled x ticks = false,
+		xtick distance = 200,
+		x tick label style={/pgf/number format/fixed},
+		xticklabel style = {rotate= 90},
+		x label style={at={(axis description cs:0.5,-0.15)},anchor=north},
+		%%
+		ytick distance = 100,
+		scaled y ticks = false,
+		y tick label style={/pgf/number format/fixed},
+		y label style={at={(axis description cs:-0.05,0.85)},anchor=east},
+		%%
+		legend pos=north west,
+		ymajorgrids=true,
+		grid style=dashed,
+		]
+		%%
+		\addplot[
+		color=black,
+		mark=*,
+		]
+		coordinates {
+(200,3.843)(400,16.596)(600,34.553)(800,67.363)(1000,89.002)(1200,130.145)(1400,174.092)(1600,237.316)(1800,295.292)(2000,362.615)(2200,432.788)
+
+		};
+		%%
+		\addplot[
+		color=blue,
+		mark=triangle,
+		]
+		coordinates {
+(200,9.474)(400,28.499)(600,65.632)(800,114.141)(1000,179.012)(1200,261.647)(1400,348.760)(1600,481.583)(1800,590.895)(2000,780.176)(2200,945.653)
+		};
+		\legend{
+			$d = 0.2$,
+			$d = 0.4$,
+		}
+		%%
+		\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+
+	\newpage
+	\tableofcontents
+\end{document}
+
+
