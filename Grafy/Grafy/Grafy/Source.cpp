@@ -16,7 +16,7 @@ int main() {
 	d4archessuccesors.open("d4_luki_nastepniki.txt");
 	d2arches.open("d2_luki_luki.txt");
 	d4arches.open("d4_luki_luki.txt");
-	for (int i = 200; i <= 3000; i+=200){
+	for (int i = 200; i <= 2200; i+=200){
 		graf G(i, 0.2f);
 		//czas sortowania dla 0.2
 		auto start = std::chrono::high_resolution_clock::now();
